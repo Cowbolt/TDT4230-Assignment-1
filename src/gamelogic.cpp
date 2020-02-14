@@ -361,11 +361,11 @@ void updateNodeTransformations(SceneNode* node, glm::mat4 transformationThusFar,
     node->modelMatrix = transformationMatrix*modelMatrix;
     node->currentTransformationMatrix = transformationThusFar * transformationMatrix;
 
-    // switch(node->nodeType) {
-    //     case GEOMETRY: break;
-    //     case POINT_LIGHT: break;
-    //     case SPOT_LIGHT: break;
-    // }
+    switch(node->nodeType) {
+        case GEOMETRY: break;
+        case POINT_LIGHT: glUniform4fv(5, 1, glm::value_ptr(node->currentTransformationMatrix*glm::vec4(0,0,0,1)));
+        case SPOT_LIGHT: break;
+    }
 
     for(SceneNode* child : node->children) {
         updateNodeTransformations(child, node->currentTransformationMatrix, transformationMatrix);
