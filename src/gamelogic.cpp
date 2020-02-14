@@ -361,6 +361,10 @@ void updateNodeTransformations(SceneNode* node, glm::mat4 transformationThusFar,
     node->modelMatrix = transformationMatrix*modelMatrix;
     node->currentTransformationMatrix = transformationThusFar * transformationMatrix;
 
+    // Normal matrix, 3x3 of inverse of transpose of model matrix
+    glUniformMatrix3fv(6, 1, GL_FALSE,
+        glm::value_ptr(glm::mat3(glm::inverse(glm::transpose(node->modelMatrix)))));
+
     switch(node->nodeType) {
         case GEOMETRY: break;
         case POINT_LIGHT: glUniform4fv(5, 1, glm::value_ptr(node->currentTransformationMatrix*glm::vec4(0,0,0,1)));
