@@ -14,7 +14,7 @@ out layout(location = 1) vec2 textureCoordinates_out;
 
 void main()
 {
-    normal_out = normal_matrix * normal_in;
+    normal_out = normalize(normal_matrix * normal_in);
     textureCoordinates_out = textureCoordinates_in;
     gl_Position = VP * model_matrix * vec4(position, 1.0f);
 }
