@@ -331,6 +331,7 @@ void updateFrame(GLFWwindow* window) {
                     glm::translate(-cameraPosition);
 
     glm::mat4 VP = projection * cameraTransform;
+    glUniformMatrix4fv(3, 1, GL_FALSE, glm::value_ptr(VP));
 
     // Move and rotate various SceneNodes
     boxNode->position = { 0, -10, -80 };
@@ -361,13 +362,10 @@ void updateNodeTransformations(SceneNode* node, glm::mat4 transformationThusFar,
     node->modelMatrix = transformationMatrix*modelMatrix;
     node->currentTransformationMatrix = transformationThusFar * transformationMatrix;
 
-    // Normal matrix, 3x3 of inverse of transpose of model matrix
-    glUniformMatrix3fv(6, 1, GL_FALSE,
-        glm::value_ptr(glm::mat3(glm::inverse(glm::transpose(node->modelMatrix)))));
 
     switch(node->nodeType) {
         case GEOMETRY: break;
-        case POINT_LIGHT: glUniform4fv(5, 1, glm::value_ptr(node->currentTransformationMatrix*glm::vec4(0,0,0,1)));
+        case POINT_LIGHT: break;
         case SPOT_LIGHT: break;
     }
 
@@ -377,8 +375,11 @@ void updateNodeTransformations(SceneNode* node, glm::mat4 transformationThusFar,
 }
 
 void renderNode(SceneNode* node) {
-    glUniformMatrix4fv(3, 1, GL_FALSE, glm::value_ptr(node->currentTransformationMatrix));
     glUniformMatrix4fv(4, 1, GL_FALSE, glm::value_ptr(node->modelMatrix));
+
+    // Normal matrix, 3x3 of inverse of transpose of model matrix
+    glUniformMatrix3fv(6, 1, GL_FALSE,
+        glm::value_ptr(glm::mat3(glm::inverse(glm::transpose(node->modelMatrix)))));
 
     switch(node->nodeType) {
         case GEOMETRY:
@@ -387,7 +388,7 @@ void renderNode(SceneNode* node) {
                 glDrawElements(GL_TRIANGLES, node->VAOIndexCount, GL_UNSIGNED_INT, nullptr);
             }
             break;
-        case POINT_LIGHT: break;
+        case POINT_LIGHT: glUniform4fv(5, 1, glm::value_ptr(node->currentTransformationMatrix*glm::vec4(0,0,0,1)));
         case SPOT_LIGHT: break;
     }
 

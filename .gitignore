@@ -36,3 +36,5 @@
 !/build/.emptydirectory
 
 /.vscode/*
+
+/lib/glad
