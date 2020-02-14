@@ -92,6 +92,9 @@ void mouseCallback(GLFWwindow* window, double x, double y) {
 //     bool a_placeholder_value;
 // };
 // LightSource lightSources[/*Put number of light sources you want here*/];
+SceneNode* leftCornerLight;
+SceneNode* rightCornerLight;
+SceneNode* padLight;
 
 void initGame(GLFWwindow* window, CommandLineOptions gameOptions) {
     buffer = new sf::SoundBuffer();
@@ -124,6 +127,7 @@ void initGame(GLFWwindow* window, CommandLineOptions gameOptions) {
     padNode  = createSceneNode();
     ballNode = createSceneNode();
 
+
     rootNode->children.push_back(boxNode);
     rootNode->children.push_back(padNode);
     rootNode->children.push_back(ballNode);
@@ -137,10 +141,21 @@ void initGame(GLFWwindow* window, CommandLineOptions gameOptions) {
     ballNode->vertexArrayObjectID = ballVAO;
     ballNode->VAOIndexCount = sphere.indices.size();
 
+    // Lights
+    leftCornerLight = createSceneNode();
+    leftCornerLight->nodeType = POINT_LIGHT;
+    leftCornerLight->vertexArrayObjectID = 0;
+    rootNode->children.push_back(leftCornerLight);
 
+    rightCornerLight = createSceneNode();
+    rightCornerLight->nodeType = POINT_LIGHT;
+    rightCornerLight->vertexArrayObjectID = 1;
+    rootNode->children.push_back(rightCornerLight);
 
-
-
+    padLight = createSceneNode();
+    padLight->nodeType = POINT_LIGHT;
+    padLight->vertexArrayObjectID = 2;
+    padNode->children.push_back(padLight);
 
     getTimeDeltaSeconds();
 
@@ -331,13 +346,9 @@ void updateFrame(GLFWwindow* window) {
     };
 
     updateNodeTransformations(rootNode, VP);
-
-
-
-
 }
 
-void updateNodeTransformations(SceneNode* node, glm::mat4 transformationThusFar) {
+void updateNodeTransformations(SceneNode* node, glm::mat4 transformationThusFar, glm::mat4 modelMatrix) {
     glm::mat4 transformationMatrix =
               glm::translate(node->position)
             * glm::translate(node->referencePoint)
@@ -347,21 +358,23 @@ void updateNodeTransformations(SceneNode* node, glm::mat4 transformationThusFar)
             * glm::scale(node->scale)
             * glm::translate(-node->referencePoint);
 
+    node->modelMatrix = transformationMatrix*modelMatrix;
     node->currentTransformationMatrix = transformationThusFar * transformationMatrix;
 
-    switch(node->nodeType) {
-        case GEOMETRY: break;
-        case POINT_LIGHT: break;
-        case SPOT_LIGHT: break;
-    }
+    // switch(node->nodeType) {
+    //     case GEOMETRY: break;
+    //     case POINT_LIGHT: break;
+    //     case SPOT_LIGHT: break;
+    // }
 
     for(SceneNode* child : node->children) {
-        updateNodeTransformations(child, node->currentTransformationMatrix);
+        updateNodeTransformations(child, node->currentTransformationMatrix, transformationMatrix);
     }
 }
 
 void renderNode(SceneNode* node) {
     glUniformMatrix4fv(3, 1, GL_FALSE, glm::value_ptr(node->currentTransformationMatrix));
+    glUniformMatrix4fv(4, 1, GL_FALSE, glm::value_ptr(node->modelMatrix));
 
     switch(node->nodeType) {
         case GEOMETRY:

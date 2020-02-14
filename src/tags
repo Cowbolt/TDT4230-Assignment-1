@@ -1,0 +1,640 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/a3c87ab5/
+ADAM7_DX	utilities/lodepng.cpp	/^static const unsigned ADAM7_DX[7] = { 8, 8, 4, 4, 2, 2, 1 }; \/*x delta values*\/$/;"	v	typeref:typename:const unsigned[7]	file:
+ADAM7_DY	utilities/lodepng.cpp	/^static const unsigned ADAM7_DY[7] = { 8, 8, 8, 4, 4, 2, 2 }; \/*y delta values*\/$/;"	v	typeref:typename:const unsigned[7]	file:
+ADAM7_IX	utilities/lodepng.cpp	/^static const unsigned ADAM7_IX[7] = { 0, 4, 0, 2, 0, 1, 0 }; \/*x start values*\/$/;"	v	typeref:typename:const unsigned[7]	file:
+ADAM7_IY	utilities/lodepng.cpp	/^static const unsigned ADAM7_IY[7] = { 0, 0, 4, 0, 2, 0, 1 }; \/*y start values*\/$/;"	v	typeref:typename:const unsigned[7]	file:
+Adam7_deinterlace	utilities/lodepng.cpp	/^static void Adam7_deinterlace(unsigned char* out, const unsigned char* in, unsigned w, unsigned /;"	f	typeref:typename:void	file:
+Adam7_getpassvalues	utilities/lodepng.cpp	/^static void Adam7_getpassvalues(unsigned passw[7], unsigned passh[7], size_t filter_passstart[8]/;"	f	typeref:typename:void	file:
+Adam7_interlace	utilities/lodepng.cpp	/^static void Adam7_interlace(unsigned char* out, const unsigned char* in, unsigned w, unsigned h,/;"	f	typeref:typename:void	file:
+BOTTOM	gamelogic.cpp	/^    BOTTOM, TOP$/;"	e	enum:KeyFrameAction	file:
+BPMLists	utilities/lodepng.cpp	/^typedef struct BPMLists {$/;"	s	file:
+BPMLists	utilities/lodepng.cpp	/^} BPMLists;$/;"	t	typeref:struct:BPMLists	file:
+BPMNode	utilities/lodepng.cpp	/^typedef struct BPMNode {$/;"	s	file:
+BPMNode	utilities/lodepng.cpp	/^} BPMNode;$/;"	t	typeref:struct:BPMNode	file:
+CAMERA_HPP	utilities/camera.hpp	/^#define CAMERA_HPP$/;"	d
+CERROR_BREAK	utilities/lodepng.cpp	/^#define CERROR_BREAK(/;"	d	file:
+CERROR_RETURN	utilities/lodepng.cpp	/^#define CERROR_RETURN(/;"	d	file:
+CERROR_RETURN_ERROR	utilities/lodepng.cpp	/^#define CERROR_RETURN_ERROR(/;"	d	file:
+CERROR_TRY_RETURN	utilities/lodepng.cpp	/^#define CERROR_TRY_RETURN(/;"	d	file:
+CLCL_ORDER	utilities/lodepng.cpp	/^static const unsigned CLCL_ORDER[NUM_CODE_LENGTH_CODES]$/;"	v	typeref:typename:const unsigned[]	file:
+Camera	utilities/camera.hpp	/^        Camera(glm::vec3 position         = glm::vec3(0.0f, 0.0f, 2.0f),$/;"	f	class:Gloom::Camera
+Camera	utilities/camera.hpp	/^    class Camera$/;"	c	namespace:Gloom
+ColorTree	utilities/lodepng.cpp	/^struct ColorTree {$/;"	s	file:
+ColorTree	utilities/lodepng.cpp	/^typedef struct ColorTree ColorTree;$/;"	t	typeref:struct:ColorTree	file:
+CommandLineOptions	utilities/window.hpp	/^struct CommandLineOptions {$/;"	s
+DEFAULT_WINDOWSIZE	utilities/lodepng.cpp	/^#define DEFAULT_WINDOWSIZE /;"	d	file:
+DISTANCEBASE	utilities/lodepng.cpp	/^static const unsigned DISTANCEBASE[30]$/;"	v	typeref:typename:const unsigned[30]	file:
+DISTANCEEXTRA	utilities/lodepng.cpp	/^static const unsigned DISTANCEEXTRA[30]$/;"	v	typeref:typename:const unsigned[30]	file:
+ERROR_BREAK	utilities/lodepng.cpp	/^#define ERROR_BREAK(/;"	d	file:
+FIRSTBITS	utilities/lodepng.cpp	/^#define FIRSTBITS /;"	d	file:
+FIRST_LENGTH_CODE_INDEX	utilities/lodepng.cpp	/^#define FIRST_LENGTH_CODE_INDEX /;"	d	file:
+GEOMETRY	sceneGraph.hpp	/^  GEOMETRY, POINT_LIGHT, SPOT_LIGHT$/;"	e	enum:SceneNodeType
+GLM_ENABLE_EXPERIMENTAL	gamelogic.cpp	/^#define GLM_ENABLE_EXPERIMENTAL$/;"	d	file:
+Gloom	utilities/camera.hpp	/^namespace Gloom$/;"	n
+Gloom	utilities/shader.hpp	/^namespace Gloom$/;"	n
+HASH_BIT_MASK	utilities/lodepng.cpp	/^static const unsigned HASH_BIT_MASK = 65535; \/*HASH_NUM_VALUES - 1, but C90 does not like that /;"	v	typeref:typename:const unsigned	file:
+HASH_NUM_VALUES	utilities/lodepng.cpp	/^static const unsigned HASH_NUM_VALUES = 65536;$/;"	v	typeref:typename:const unsigned	file:
+Hash	utilities/lodepng.cpp	/^typedef struct Hash {$/;"	s	file:
+Hash	utilities/lodepng.cpp	/^} Hash;$/;"	t	typeref:struct:Hash	file:
+HuffmanTree	utilities/lodepng.cpp	/^typedef struct HuffmanTree {$/;"	s	file:
+HuffmanTree	utilities/lodepng.cpp	/^} HuffmanTree;$/;"	t	typeref:struct:HuffmanTree	file:
+HuffmanTree_cleanup	utilities/lodepng.cpp	/^static void HuffmanTree_cleanup(HuffmanTree* tree) {$/;"	f	typeref:typename:void	file:
+HuffmanTree_getCode	utilities/lodepng.cpp	/^static unsigned HuffmanTree_getCode(const HuffmanTree* tree, unsigned index) {$/;"	f	typeref:typename:unsigned	file:
+HuffmanTree_getLength	utilities/lodepng.cpp	/^static unsigned HuffmanTree_getLength(const HuffmanTree* tree, unsigned index) {$/;"	f	typeref:typename:unsigned	file:
+HuffmanTree_init	utilities/lodepng.cpp	/^static void HuffmanTree_init(HuffmanTree* tree) {$/;"	f	typeref:typename:void	file:
+HuffmanTree_makeFromFrequencies	utilities/lodepng.cpp	/^static unsigned HuffmanTree_makeFromFrequencies(HuffmanTree* tree, const unsigned* frequencies,$/;"	f	typeref:typename:unsigned	file:
+HuffmanTree_makeFromLengths	utilities/lodepng.cpp	/^static unsigned HuffmanTree_makeFromLengths(HuffmanTree* tree, const unsigned* bitlen,$/;"	f	typeref:typename:unsigned	file:
+HuffmanTree_makeFromLengths2	utilities/lodepng.cpp	/^static unsigned HuffmanTree_makeFromLengths2(HuffmanTree* tree) {$/;"	f	typeref:typename:unsigned	file:
+HuffmanTree_makeTable	utilities/lodepng.cpp	/^static unsigned HuffmanTree_makeTable(HuffmanTree* tree) {$/;"	f	typeref:typename:unsigned	file:
+INVALIDSYMBOL	utilities/lodepng.cpp	/^#define INVALIDSYMBOL /;"	d	file:
+KeyFrameAction	gamelogic.cpp	/^enum KeyFrameAction {$/;"	g	file:
+LAST_LENGTH_CODE_INDEX	utilities/lodepng.cpp	/^#define LAST_LENGTH_CODE_INDEX /;"	d	file:
+LCT_GREY	utilities/lodepng.h	/^  LCT_GREY = 0, \/*grayscale: 1,2,4,8,16 bit*\/$/;"	e	enum:LodePNGColorType
+LCT_GREY_ALPHA	utilities/lodepng.h	/^  LCT_GREY_ALPHA = 4, \/*grayscale with alpha: 8,16 bit*\/$/;"	e	enum:LodePNGColorType
+LCT_MAX_OCTET_VALUE	utilities/lodepng.h	/^  LCT_MAX_OCTET_VALUE = 255$/;"	e	enum:LodePNGColorType
+LCT_PALETTE	utilities/lodepng.h	/^  LCT_PALETTE = 3, \/*palette: 1,2,4,8 bit*\/$/;"	e	enum:LodePNGColorType
+LCT_RGB	utilities/lodepng.h	/^  LCT_RGB = 2, \/*RGB: 8,16 bit*\/$/;"	e	enum:LodePNGColorType
+LCT_RGBA	utilities/lodepng.h	/^  LCT_RGBA = 6, \/*RGB with alpha: 8,16 bit*\/$/;"	e	enum:LodePNGColorType
+LENGTHBASE	utilities/lodepng.cpp	/^static const unsigned LENGTHBASE[29]$/;"	v	typeref:typename:const unsigned[29]	file:
+LENGTHEXTRA	utilities/lodepng.cpp	/^static const unsigned LENGTHEXTRA[29]$/;"	v	typeref:typename:const unsigned[29]	file:
+LFS_BRUTE_FORCE	utilities/lodepng.h	/^  LFS_BRUTE_FORCE,$/;"	e	enum:LodePNGFilterStrategy
+LFS_ENTROPY	utilities/lodepng.h	/^  LFS_ENTROPY,$/;"	e	enum:LodePNGFilterStrategy
+LFS_FOUR	utilities/lodepng.h	/^  LFS_FOUR = 4,$/;"	e	enum:LodePNGFilterStrategy
+LFS_MINSUM	utilities/lodepng.h	/^  LFS_MINSUM,$/;"	e	enum:LodePNGFilterStrategy
+LFS_ONE	utilities/lodepng.h	/^  LFS_ONE = 1,$/;"	e	enum:LodePNGFilterStrategy
+LFS_PREDEFINED	utilities/lodepng.h	/^  LFS_PREDEFINED$/;"	e	enum:LodePNGFilterStrategy
+LFS_THREE	utilities/lodepng.h	/^  LFS_THREE = 3,$/;"	e	enum:LodePNGFilterStrategy
+LFS_TWO	utilities/lodepng.h	/^  LFS_TWO = 2,$/;"	e	enum:LodePNGFilterStrategy
+LFS_ZERO	utilities/lodepng.h	/^  LFS_ZERO = 0,$/;"	e	enum:LodePNGFilterStrategy
+LODEPNG_ABS	utilities/lodepng.cpp	/^#define LODEPNG_ABS(/;"	d	file:
+LODEPNG_COMPILE_ALLOCATORS	utilities/lodepng.h	/^#define LODEPNG_COMPILE_ALLOCATORS$/;"	d
+LODEPNG_COMPILE_ANCILLARY_CHUNKS	utilities/lodepng.h	/^#define LODEPNG_COMPILE_ANCILLARY_CHUNKS$/;"	d
+LODEPNG_COMPILE_CPP	utilities/lodepng.h	/^#define LODEPNG_COMPILE_CPP$/;"	d
+LODEPNG_COMPILE_DECODER	utilities/lodepng.h	/^#define LODEPNG_COMPILE_DECODER$/;"	d
+LODEPNG_COMPILE_DISK	utilities/lodepng.h	/^#define LODEPNG_COMPILE_DISK$/;"	d
+LODEPNG_COMPILE_ENCODER	utilities/lodepng.h	/^#define LODEPNG_COMPILE_ENCODER$/;"	d
+LODEPNG_COMPILE_ERROR_TEXT	utilities/lodepng.h	/^#define LODEPNG_COMPILE_ERROR_TEXT$/;"	d
+LODEPNG_COMPILE_PNG	utilities/lodepng.h	/^#define LODEPNG_COMPILE_PNG$/;"	d
+LODEPNG_COMPILE_ZLIB	utilities/lodepng.h	/^#define LODEPNG_COMPILE_ZLIB$/;"	d
+LODEPNG_H	utilities/lodepng.h	/^#define LODEPNG_H$/;"	d
+LODEPNG_INLINE	utilities/lodepng.cpp	/^#define LODEPNG_INLINE /;"	d	file:
+LODEPNG_MAX	utilities/lodepng.cpp	/^#define LODEPNG_MAX(/;"	d	file:
+LODEPNG_MIN	utilities/lodepng.cpp	/^#define LODEPNG_MIN(/;"	d	file:
+LODEPNG_RESTRICT	utilities/lodepng.cpp	/^#define LODEPNG_RESTRICT /;"	d	file:
+LODEPNG_VERSION_STRING	utilities/lodepng.cpp	/^const char* LODEPNG_VERSION_STRING = "20200112";$/;"	v	typeref:typename:const char *
+LodePNGBitReader	utilities/lodepng.cpp	/^} LodePNGBitReader;$/;"	t	typeref:struct:__anon1746e14a0208	file:
+LodePNGBitReader_init	utilities/lodepng.cpp	/^static unsigned LodePNGBitReader_init(LodePNGBitReader* reader, const unsigned char* data, size_/;"	f	typeref:typename:unsigned	file:
+LodePNGBitWriter	utilities/lodepng.cpp	/^} LodePNGBitWriter;$/;"	t	typeref:struct:__anon1746e14a0108	file:
+LodePNGBitWriter_init	utilities/lodepng.cpp	/^void LodePNGBitWriter_init(LodePNGBitWriter* writer, ucvector* data) {$/;"	f	typeref:typename:void
+LodePNGColorMode	utilities/lodepng.h	/^typedef struct LodePNGColorMode {$/;"	s
+LodePNGColorMode	utilities/lodepng.h	/^} LodePNGColorMode;$/;"	t	typeref:struct:LodePNGColorMode
+LodePNGColorStats	utilities/lodepng.h	/^typedef struct LodePNGColorStats {$/;"	s
+LodePNGColorStats	utilities/lodepng.h	/^} LodePNGColorStats;$/;"	t	typeref:struct:LodePNGColorStats
+LodePNGColorType	utilities/lodepng.h	/^typedef enum LodePNGColorType {$/;"	g
+LodePNGColorType	utilities/lodepng.h	/^} LodePNGColorType;$/;"	t	typeref:enum:LodePNGColorType
+LodePNGCompressSettings	utilities/lodepng.h	/^struct LodePNGCompressSettings \/*deflate = compress*\/ {$/;"	s
+LodePNGCompressSettings	utilities/lodepng.h	/^typedef struct LodePNGCompressSettings LodePNGCompressSettings;$/;"	t	typeref:struct:LodePNGCompressSettings
+LodePNGDecoderSettings	utilities/lodepng.h	/^typedef struct LodePNGDecoderSettings {$/;"	s
+LodePNGDecoderSettings	utilities/lodepng.h	/^} LodePNGDecoderSettings;$/;"	t	typeref:struct:LodePNGDecoderSettings
+LodePNGDecompressSettings	utilities/lodepng.h	/^struct LodePNGDecompressSettings {$/;"	s
+LodePNGDecompressSettings	utilities/lodepng.h	/^typedef struct LodePNGDecompressSettings LodePNGDecompressSettings;$/;"	t	typeref:struct:LodePNGDecompressSettings
+LodePNGEncoderSettings	utilities/lodepng.h	/^typedef struct LodePNGEncoderSettings {$/;"	s
+LodePNGEncoderSettings	utilities/lodepng.h	/^} LodePNGEncoderSettings;$/;"	t	typeref:struct:LodePNGEncoderSettings
+LodePNGFilterStrategy	utilities/lodepng.h	/^typedef enum LodePNGFilterStrategy {$/;"	g
+LodePNGFilterStrategy	utilities/lodepng.h	/^} LodePNGFilterStrategy;$/;"	t	typeref:enum:LodePNGFilterStrategy
+LodePNGIText_cleanup	utilities/lodepng.cpp	/^static void LodePNGIText_cleanup(LodePNGInfo* info) {$/;"	f	typeref:typename:void	file:
+LodePNGIText_copy	utilities/lodepng.cpp	/^static unsigned LodePNGIText_copy(LodePNGInfo* dest, const LodePNGInfo* source) {$/;"	f	typeref:typename:unsigned	file:
+LodePNGIText_init	utilities/lodepng.cpp	/^static void LodePNGIText_init(LodePNGInfo* info) {$/;"	f	typeref:typename:void	file:
+LodePNGInfo	utilities/lodepng.h	/^typedef struct LodePNGInfo {$/;"	s
+LodePNGInfo	utilities/lodepng.h	/^} LodePNGInfo;$/;"	t	typeref:struct:LodePNGInfo
+LodePNGState	utilities/lodepng.h	/^typedef struct LodePNGState {$/;"	s
+LodePNGState	utilities/lodepng.h	/^} LodePNGState;$/;"	t	typeref:struct:LodePNGState
+LodePNGText_cleanup	utilities/lodepng.cpp	/^static void LodePNGText_cleanup(LodePNGInfo* info) {$/;"	f	typeref:typename:void	file:
+LodePNGText_copy	utilities/lodepng.cpp	/^static unsigned LodePNGText_copy(LodePNGInfo* dest, const LodePNGInfo* source) {$/;"	f	typeref:typename:unsigned	file:
+LodePNGText_init	utilities/lodepng.cpp	/^static void LodePNGText_init(LodePNGInfo* info) {$/;"	f	typeref:typename:void	file:
+LodePNGTime	utilities/lodepng.h	/^typedef struct LodePNGTime {$/;"	s
+LodePNGTime	utilities/lodepng.h	/^} LodePNGTime;$/;"	t	typeref:struct:LodePNGTime
+LodePNGUnknownChunks_cleanup	utilities/lodepng.cpp	/^static void LodePNGUnknownChunks_cleanup(LodePNGInfo* info) {$/;"	f	typeref:typename:void	file:
+LodePNGUnknownChunks_copy	utilities/lodepng.cpp	/^static unsigned LodePNGUnknownChunks_copy(LodePNGInfo* dest, const LodePNGInfo* src) {$/;"	f	typeref:typename:unsigned	file:
+LodePNGUnknownChunks_init	utilities/lodepng.cpp	/^static void LodePNGUnknownChunks_init(LodePNGInfo* info) {$/;"	f	typeref:typename:void	file:
+MAX_SUPPORTED_DEFLATE_LENGTH	utilities/lodepng.cpp	/^static const size_t MAX_SUPPORTED_DEFLATE_LENGTH = 258;$/;"	v	typeref:typename:const size_t	file:
+Mesh	utilities/mesh.h	/^struct Mesh {$/;"	s
+NUM_CODE_LENGTH_CODES	utilities/lodepng.cpp	/^#define NUM_CODE_LENGTH_CODES /;"	d	file:
+NUM_DEFLATE_CODE_SYMBOLS	utilities/lodepng.cpp	/^#define NUM_DEFLATE_CODE_SYMBOLS /;"	d	file:
+NUM_DISTANCE_SYMBOLS	utilities/lodepng.cpp	/^#define NUM_DISTANCE_SYMBOLS /;"	d	file:
+PNGImage	utilities/imageLoader.hpp	/^typedef struct PNGImage {$/;"	s
+PNGImage	utilities/imageLoader.hpp	/^} PNGImage;$/;"	t	typeref:struct:PNGImage
+POINT_LIGHT	sceneGraph.hpp	/^  GEOMETRY, POINT_LIGHT, SPOT_LIGHT$/;"	e	enum:SceneNodeType
+PROGRAM_HPP	program.hpp	/^#define PROGRAM_HPP$/;"	d
+SHADER_HPP	utilities/shader.hpp	/^#define SHADER_HPP$/;"	d
+SPOT_LIGHT	sceneGraph.hpp	/^  GEOMETRY, POINT_LIGHT, SPOT_LIGHT$/;"	e	enum:SceneNodeType
+SceneNode	sceneGraph.hpp	/^  SceneNode() {$/;"	f	struct:SceneNode
+SceneNode	sceneGraph.hpp	/^struct SceneNode {$/;"	s
+SceneNodeType	sceneGraph.hpp	/^enum SceneNodeType {$/;"	g
+Shader	utilities/shader.hpp	/^        Shader()            { mProgram = glCreateProgram(); }$/;"	f	class:Gloom::Shader
+Shader	utilities/shader.hpp	/^    class Shader$/;"	c	namespace:Gloom
+State	utilities/lodepng.cpp	/^State::State() {$/;"	f	class:lodepng::State
+State	utilities/lodepng.cpp	/^State::State(const State& other) {$/;"	f	class:lodepng::State
+State	utilities/lodepng.h	/^class State : public LodePNGState {$/;"	c	namespace:lodepng
+TOP	gamelogic.cpp	/^    BOTTOM, TOP$/;"	e	enum:KeyFrameAction	file:
+VAOIndexCount	sceneGraph.hpp	/^  unsigned int VAOIndexCount;$/;"	m	struct:SceneNode	typeref:typename:unsigned int
+WRITEBIT	utilities/lodepng.cpp	/^#define WRITEBIT(/;"	d	file:
+__anon1746e14a0108	utilities/lodepng.cpp	/^typedef struct {$/;"	s	file:
+__anon1746e14a0208	utilities/lodepng.cpp	/^typedef struct {$/;"	s	file:
+_previousTimePoint	utilities/timeutils.cpp	/^static std::chrono::steady_clock::time_point _previousTimePoint = std::chrono::steady_clock::now/;"	v	typeref:typename:std::chrono::steady_clock::time_point	file:
+activate	utilities/shader.hpp	/^        void   activate()   { glUseProgram(mProgram); }$/;"	f	class:Gloom::Shader	typeref:typename:void
+addChild	sceneGraph.cpp	/^void addChild(SceneNode* parent, SceneNode* child) {$/;"	f	typeref:typename:void
+addChunk	utilities/lodepng.cpp	/^static unsigned addChunk(ucvector* out, const char* chunkName, const unsigned char* data, size_t/;"	f	typeref:typename:unsigned	file:
+addChunk_IDAT	utilities/lodepng.cpp	/^static unsigned addChunk_IDAT(ucvector* out, const unsigned char* data, size_t datasize,$/;"	f	typeref:typename:unsigned	file:
+addChunk_IEND	utilities/lodepng.cpp	/^static unsigned addChunk_IEND(ucvector* out) {$/;"	f	typeref:typename:unsigned	file:
+addChunk_IHDR	utilities/lodepng.cpp	/^static unsigned addChunk_IHDR(ucvector* out, unsigned w, unsigned h,$/;"	f	typeref:typename:unsigned	file:
+addChunk_PLTE	utilities/lodepng.cpp	/^static unsigned addChunk_PLTE(ucvector* out, const LodePNGColorMode* info) {$/;"	f	typeref:typename:unsigned	file:
+addChunk_bKGD	utilities/lodepng.cpp	/^static unsigned addChunk_bKGD(ucvector* out, const LodePNGInfo* info) {$/;"	f	typeref:typename:unsigned	file:
+addChunk_cHRM	utilities/lodepng.cpp	/^static unsigned addChunk_cHRM(ucvector* out, const LodePNGInfo* info) {$/;"	f	typeref:typename:unsigned	file:
+addChunk_gAMA	utilities/lodepng.cpp	/^static unsigned addChunk_gAMA(ucvector* out, const LodePNGInfo* info) {$/;"	f	typeref:typename:unsigned	file:
+addChunk_iCCP	utilities/lodepng.cpp	/^static unsigned addChunk_iCCP(ucvector* out, const LodePNGInfo* info, LodePNGCompressSettings* z/;"	f	typeref:typename:unsigned	file:
+addChunk_iTXt	utilities/lodepng.cpp	/^static unsigned addChunk_iTXt(ucvector* out, unsigned compressed, const char* keyword, const cha/;"	f	typeref:typename:unsigned	file:
+addChunk_pHYs	utilities/lodepng.cpp	/^static unsigned addChunk_pHYs(ucvector* out, const LodePNGInfo* info) {$/;"	f	typeref:typename:unsigned	file:
+addChunk_sRGB	utilities/lodepng.cpp	/^static unsigned addChunk_sRGB(ucvector* out, const LodePNGInfo* info) {$/;"	f	typeref:typename:unsigned	file:
+addChunk_tEXt	utilities/lodepng.cpp	/^static unsigned addChunk_tEXt(ucvector* out, const char* keyword, const char* textstring) {$/;"	f	typeref:typename:unsigned	file:
+addChunk_tIME	utilities/lodepng.cpp	/^static unsigned addChunk_tIME(ucvector* out, const LodePNGTime* time) {$/;"	f	typeref:typename:unsigned	file:
+addChunk_tRNS	utilities/lodepng.cpp	/^static unsigned addChunk_tRNS(ucvector* out, const LodePNGColorMode* info) {$/;"	f	typeref:typename:unsigned	file:
+addChunk_zTXt	utilities/lodepng.cpp	/^static unsigned addChunk_zTXt(ucvector* out, const char* keyword, const char* textstring,$/;"	f	typeref:typename:unsigned	file:
+addColorBits	utilities/lodepng.cpp	/^static void addColorBits(unsigned char* out, size_t index, unsigned bits, unsigned in) {$/;"	f	typeref:typename:void	file:
+addLengthDistance	utilities/lodepng.cpp	/^static void addLengthDistance(uivector* values, size_t length, size_t distance) {$/;"	f	typeref:typename:void	file:
+addPaddingBits	utilities/lodepng.cpp	/^static void addPaddingBits(unsigned char* out, const unsigned char* in,$/;"	f	typeref:typename:void	file:
+addUnknownChunks	utilities/lodepng.cpp	/^static unsigned addUnknownChunks(ucvector* out, unsigned char* data, size_t datasize) {$/;"	f	typeref:typename:unsigned	file:
+add_id	utilities/lodepng.h	/^  unsigned add_id;$/;"	m	struct:LodePNGEncoderSettings	typeref:typename:unsigned
+adler32	utilities/lodepng.cpp	/^static unsigned adler32(const unsigned char* data, unsigned len) {$/;"	f	typeref:typename:unsigned	file:
+advanceBits	utilities/lodepng.cpp	/^static void advanceBits(LodePNGBitReader* reader, size_t nbits) {$/;"	f	typeref:typename:void	file:
+alloc_string	utilities/lodepng.cpp	/^static char* alloc_string(const char* in) {$/;"	f	typeref:typename:char *	file:
+allocsize	utilities/lodepng.cpp	/^  size_t allocsize; \/*allocated size in bytes*\/$/;"	m	struct:uivector	typeref:typename:size_t	file:
+allocsize	utilities/lodepng.cpp	/^  size_t allocsize; \/*allocated size*\/$/;"	m	struct:ucvector	typeref:typename:size_t	file:
+allow_greyscale	utilities/lodepng.h	/^  unsigned allow_greyscale; \/*default 1. if 0, choose RGB or RGBA even if the image only has gr/;"	m	struct:LodePNGColorStats	typeref:typename:unsigned
+allow_palette	utilities/lodepng.h	/^  unsigned allow_palette; \/*default 1. if 0, disallow choosing palette colortype in auto_choose/;"	m	struct:LodePNGColorStats	typeref:typename:unsigned
+alpha	utilities/lodepng.h	/^  unsigned alpha; \/*image is not opaque and alpha channel or alpha palette required*\/$/;"	m	struct:LodePNGColorStats	typeref:typename:unsigned
+attach	utilities/shader.hpp	/^        void attach(std::string const &filename)$/;"	f	class:Gloom::Shader	typeref:typename:void
+auto_choose_color	utilities/lodepng.cpp	/^static unsigned auto_choose_color(LodePNGColorMode* mode_out,$/;"	f	typeref:typename:unsigned	file:
+auto_convert	utilities/lodepng.h	/^  unsigned auto_convert; \/*automatically choose output PNG color type. Default: true*\/$/;"	m	struct:LodePNGEncoderSettings	typeref:typename:unsigned
+background_b	utilities/lodepng.h	/^  unsigned background_b;       \/*blue component of suggested background color*\/$/;"	m	struct:LodePNGInfo	typeref:typename:unsigned
+background_defined	utilities/lodepng.h	/^  unsigned background_defined; \/*is a suggested background color given?*\/$/;"	m	struct:LodePNGInfo	typeref:typename:unsigned
+background_g	utilities/lodepng.h	/^  unsigned background_g;       \/*green component of suggested background color*\/$/;"	m	struct:LodePNGInfo	typeref:typename:unsigned
+background_r	utilities/lodepng.h	/^  unsigned background_r;       \/*red\/gray\/palette component of suggested background color*\/$/;"	m	struct:LodePNGInfo	typeref:typename:unsigned
+ballDirection	gamelogic.cpp	/^glm::vec3 ballDirection(1, 1, 0.2f);$/;"	v	typeref:typename:glm::vec3
+ballNode	gamelogic.cpp	/^SceneNode* ballNode;$/;"	v	typeref:typename:SceneNode *
+ballPosition	gamelogic.cpp	/^glm::vec3 ballPosition(0, ballRadius + padDimensions.y, boxDimensions.z \/ 2);$/;"	v	typeref:typename:glm::vec3
+ballRadius	gamelogic.cpp	/^double ballRadius = 3.0f;$/;"	v	typeref:typename:double
+bitdepth	utilities/lodepng.h	/^  unsigned bitdepth;  \/*bits per sample, see PNG standard or documentation further in this head/;"	m	struct:LodePNGColorMode	typeref:typename:unsigned
+bits	utilities/lodepng.h	/^  unsigned bits; \/*bits per channel (not for palette). 1,2 or 4 for grayscale only. 16 if 16-bi/;"	m	struct:LodePNGColorStats	typeref:typename:unsigned
+bitsize	utilities/lodepng.cpp	/^  size_t bitsize; \/*size of data in bits, end of valid bp values, should be 8*size*\/$/;"	m	struct:__anon1746e14a0208	typeref:typename:size_t	file:
+boundaryPM	utilities/lodepng.cpp	/^static void boundaryPM(BPMLists* lists, BPMNode* leaves, size_t numpresent, int c, int num) {$/;"	f	typeref:typename:void	file:
+boxDimensions	gamelogic.cpp	/^const glm::vec3 boxDimensions(180, 90, 90);$/;"	v	typeref:typename:const glm::vec3
+boxNode	gamelogic.cpp	/^SceneNode* boxNode;$/;"	v	typeref:typename:SceneNode *
+bp	utilities/lodepng.cpp	/^  size_t bp;$/;"	m	struct:__anon1746e14a0108	typeref:typename:size_t	file:
+bp	utilities/lodepng.cpp	/^  size_t bp;$/;"	m	struct:__anon1746e14a0208	typeref:typename:size_t	file:
+bpmnode_create	utilities/lodepng.cpp	/^static BPMNode* bpmnode_create(BPMLists* lists, int weight, unsigned index, BPMNode* tail) {$/;"	f	typeref:typename:BPMNode *	file:
+bpmnode_sort	utilities/lodepng.cpp	/^static void bpmnode_sort(BPMNode* leaves, size_t num) {$/;"	f	typeref:typename:void	file:
+btype	utilities/lodepng.h	/^  unsigned btype; \/*the block type for LZ (0, 1, 2 or 3, see zlib standard). Should be 2 for pr/;"	m	struct:LodePNGCompressSettings	typeref:typename:unsigned
+buffer	gamelogic.cpp	/^sf::SoundBuffer* buffer;$/;"	v	typeref:typename:sf::SoundBuffer *
+buffer	utilities/lodepng.cpp	/^  unsigned buffer; \/*buffer for reading bits. NOTE: 'unsigned' must support at least 32 bits*\/$/;"	m	struct:__anon1746e14a0208	typeref:typename:unsigned	file:
+cMouseSensitivity	utilities/camera.hpp	/^        GLfloat cMouseSensitivity;$/;"	m	class:Gloom::Camera	typeref:typename:GLfloat
+cMovementSpeed	utilities/camera.hpp	/^        GLfloat cMovementSpeed;$/;"	m	class:Gloom::Camera	typeref:typename:GLfloat
+cPosition	utilities/camera.hpp	/^        glm::vec3 cPosition;$/;"	m	class:Gloom::Camera	typeref:typename:glm::vec3
+cQuaternion	utilities/camera.hpp	/^        glm::quat cQuaternion;$/;"	m	class:Gloom::Camera	typeref:typename:glm::quat
+chain	utilities/lodepng.cpp	/^  unsigned short* chain;$/;"	m	struct:Hash	typeref:typename:unsigned short *	file:
+chains0	utilities/lodepng.cpp	/^  BPMNode** chains0;$/;"	m	struct:BPMLists	typeref:typename:BPMNode **	file:
+chains1	utilities/lodepng.cpp	/^  BPMNode** chains1;$/;"	m	struct:BPMLists	typeref:typename:BPMNode **	file:
+chainz	utilities/lodepng.cpp	/^  unsigned short* chainz; \/*those with same amount of zeros*\/$/;"	m	struct:Hash	typeref:typename:unsigned short *	file:
+checkColorValidity	utilities/lodepng.cpp	/^static unsigned checkColorValidity(LodePNGColorType colortype, unsigned bd) {$/;"	f	typeref:typename:unsigned	file:
+children	sceneGraph.hpp	/^  std::vector<SceneNode*> children;$/;"	m	struct:SceneNode	typeref:typename:std::vector<SceneNode * >
+children	utilities/lodepng.cpp	/^  ColorTree* children[16]; \/*up to 16 pointers to ColorTree of next level*\/$/;"	m	struct:ColorTree	typeref:typename:ColorTree * [16]	file:
+chrm_blue_x	utilities/lodepng.h	/^  unsigned chrm_blue_x;  \/* Blue x times 100000 *\/$/;"	m	struct:LodePNGInfo	typeref:typename:unsigned
+chrm_blue_y	utilities/lodepng.h	/^  unsigned chrm_blue_y;  \/* Blue y times 100000 *\/$/;"	m	struct:LodePNGInfo	typeref:typename:unsigned
+chrm_defined	utilities/lodepng.h	/^  unsigned chrm_defined; \/* Whether a cHRM chunk is present (0 = not present, 1 = present). *\/$/;"	m	struct:LodePNGInfo	typeref:typename:unsigned
+chrm_green_x	utilities/lodepng.h	/^  unsigned chrm_green_x; \/* Green x times 100000 *\/$/;"	m	struct:LodePNGInfo	typeref:typename:unsigned
+chrm_green_y	utilities/lodepng.h	/^  unsigned chrm_green_y; \/* Green y times 100000 *\/$/;"	m	struct:LodePNGInfo	typeref:typename:unsigned
+chrm_red_x	utilities/lodepng.h	/^  unsigned chrm_red_x;   \/* Red x times 100000 *\/$/;"	m	struct:LodePNGInfo	typeref:typename:unsigned
+chrm_red_y	utilities/lodepng.h	/^  unsigned chrm_red_y;   \/* Red y times 100000 *\/$/;"	m	struct:LodePNGInfo	typeref:typename:unsigned
+chrm_white_x	utilities/lodepng.h	/^  unsigned chrm_white_x; \/* White Point x times 100000 *\/$/;"	m	struct:LodePNGInfo	typeref:typename:unsigned
+chrm_white_y	utilities/lodepng.h	/^  unsigned chrm_white_y; \/* White Point y times 100000 *\/$/;"	m	struct:LodePNGInfo	typeref:typename:unsigned
+codes	utilities/lodepng.cpp	/^  unsigned* codes; \/*the huffman codes (bit patterns representing the symbols)*\/$/;"	m	struct:HuffmanTree	typeref:typename:unsigned *	file:
+color	utilities/lodepng.h	/^  LodePNGColorMode color;     \/*color type and bits, palette and transparency of the PNG file*\/$/;"	m	struct:LodePNGInfo	typeref:typename:LodePNGColorMode
+color_convert	utilities/lodepng.h	/^  unsigned color_convert; \/*whether to convert the PNG to the color type you want. Default: yes/;"	m	struct:LodePNGDecoderSettings	typeref:typename:unsigned
+color_tree_add	utilities/lodepng.cpp	/^static void color_tree_add(ColorTree* tree,$/;"	f	typeref:typename:void	file:
+color_tree_cleanup	utilities/lodepng.cpp	/^static void color_tree_cleanup(ColorTree* tree) {$/;"	f	typeref:typename:void	file:
+color_tree_get	utilities/lodepng.cpp	/^static int color_tree_get(ColorTree* tree, unsigned char r, unsigned char g, unsigned char b, un/;"	f	typeref:typename:int	file:
+color_tree_has	utilities/lodepng.cpp	/^static int color_tree_has(ColorTree* tree, unsigned char r, unsigned char g, unsigned char b, un/;"	f	typeref:typename:int	file:
+color_tree_init	utilities/lodepng.cpp	/^static void color_tree_init(ColorTree* tree) {$/;"	f	typeref:typename:void	file:
+colored	utilities/lodepng.h	/^  unsigned colored; \/*not grayscale*\/$/;"	m	struct:LodePNGColorStats	typeref:typename:unsigned
+colortype	utilities/lodepng.h	/^  LodePNGColorType colortype; \/*color type, see PNG standard or documentation further in this h/;"	m	struct:LodePNGColorMode	typeref:typename:LodePNGColorType
+compress	utilities/lodepng.cpp	/^unsigned compress(std::vector<unsigned char>& out, const std::vector<unsigned char>& in,$/;"	f	namespace:lodepng	typeref:typename:unsigned
+compress	utilities/lodepng.cpp	/^unsigned compress(std::vector<unsigned char>& out, const unsigned char* in, size_t insize,$/;"	f	namespace:lodepng	typeref:typename:unsigned
+compression_method	utilities/lodepng.h	/^  unsigned compression_method;\/*compression method of the original file. Always 0.*\/$/;"	m	struct:LodePNGInfo	typeref:typename:unsigned
+countZeros	utilities/lodepng.cpp	/^static unsigned countZeros(const unsigned char* data, size_t size, size_t pos) {$/;"	f	typeref:typename:unsigned	file:
+create	utilities/shader.hpp	/^        GLuint create(std::string const &filename)$/;"	f	class:Gloom::Shader	typeref:typename:GLuint
+createSceneNode	sceneGraph.cpp	/^SceneNode* createSceneNode() {$/;"	f	typeref:typename:SceneNode *
+cube	utilities/shapes.cpp	/^Mesh cube(glm::vec3 scale, glm::vec2 textureScale, bool tilingTextures, bool inverted, glm::vec3/;"	f	typeref:typename:Mesh
+currentKeyFrame	gamelogic.cpp	/^unsigned int currentKeyFrame = 0;$/;"	v	typeref:typename:unsigned int
+currentTransformationMatrix	sceneGraph.hpp	/^  glm::mat4 currentTransformationMatrix;$/;"	m	struct:SceneNode	typeref:typename:glm::mat4
+custom_context	utilities/lodepng.h	/^  const void* custom_context; \/*optional custom settings for custom functions*\/$/;"	m	struct:LodePNGCompressSettings	typeref:typename:const void *
+custom_context	utilities/lodepng.h	/^  const void* custom_context; \/*optional custom settings for custom functions*\/$/;"	m	struct:LodePNGDecompressSettings	typeref:typename:const void *
+custom_deflate	utilities/lodepng.h	/^  unsigned (*custom_deflate)(unsigned char**, size_t*,$/;"	m	struct:LodePNGCompressSettings	typeref:typename:unsigned (*)(unsigned char **,size_t *,const unsigned char *,size_t,const LodePNGCompressSettings *)
+custom_inflate	utilities/lodepng.h	/^  unsigned (*custom_inflate)(unsigned char**, size_t*,$/;"	m	struct:LodePNGDecompressSettings	typeref:typename:unsigned (*)(unsigned char **,size_t *,const unsigned char *,size_t,const LodePNGDecompressSettings *)
+custom_zlib	utilities/lodepng.h	/^  unsigned (*custom_zlib)(unsigned char**, size_t*,$/;"	m	struct:LodePNGCompressSettings	typeref:typename:unsigned (*)(unsigned char **,size_t *,const unsigned char *,size_t,const LodePNGCompressSettings *)
+custom_zlib	utilities/lodepng.h	/^  unsigned (*custom_zlib)(unsigned char**, size_t*,$/;"	m	struct:LodePNGDecompressSettings	typeref:typename:unsigned (*)(unsigned char **,size_t *,const unsigned char *,size_t,const LodePNGDecompressSettings *)
+data	utilities/lodepng.cpp	/^  const unsigned char* data;$/;"	m	struct:__anon1746e14a0208	typeref:typename:const unsigned char *	file:
+data	utilities/lodepng.cpp	/^  ucvector* data;$/;"	m	struct:__anon1746e14a0108	typeref:typename:ucvector *	file:
+data	utilities/lodepng.cpp	/^  unsigned char* data;$/;"	m	struct:ucvector	typeref:typename:unsigned char *	file:
+data	utilities/lodepng.cpp	/^  unsigned* data;$/;"	m	struct:uivector	typeref:typename:unsigned *	file:
+day	utilities/lodepng.h	/^  unsigned day;     \/*1-31*\/$/;"	m	struct:LodePNGTime	typeref:typename:unsigned
+deactivate	utilities/shader.hpp	/^        void   deactivate() { glUseProgram(0); }$/;"	f	class:Gloom::Shader	typeref:typename:void
+debug_startTime	gamelogic.cpp	/^const float debug_startTime = 0;$/;"	v	typeref:typename:const float
+decode	utilities/lodepng.cpp	/^unsigned decode(std::vector<unsigned char>& out, unsigned& w, unsigned& h, const std::string& fi/;"	f	namespace:lodepng	typeref:typename:unsigned
+decode	utilities/lodepng.cpp	/^unsigned decode(std::vector<unsigned char>& out, unsigned& w, unsigned& h, const unsigned char* /;"	f	namespace:lodepng	typeref:typename:unsigned
+decode	utilities/lodepng.cpp	/^unsigned decode(std::vector<unsigned char>& out, unsigned& w, unsigned& h,$/;"	f	namespace:lodepng	typeref:typename:unsigned
+decodeGeneric	utilities/lodepng.cpp	/^static void decodeGeneric(unsigned char** out, unsigned* w, unsigned* h,$/;"	f	typeref:typename:void	file:
+decoder	utilities/lodepng.h	/^  LodePNGDecoderSettings decoder; \/*the decoding settings*\/$/;"	m	struct:LodePNGState	typeref:typename:LodePNGDecoderSettings
+decompress	utilities/lodepng.cpp	/^unsigned decompress(std::vector<unsigned char>& out, const std::vector<unsigned char>& in,$/;"	f	namespace:lodepng	typeref:typename:unsigned
+decompress	utilities/lodepng.cpp	/^unsigned decompress(std::vector<unsigned char>& out, const unsigned char* in, size_t insize,$/;"	f	namespace:lodepng	typeref:typename:unsigned
+deflate	utilities/lodepng.cpp	/^static unsigned deflate(unsigned char** out, size_t* outsize,$/;"	f	typeref:typename:unsigned	file:
+deflateDynamic	utilities/lodepng.cpp	/^static unsigned deflateDynamic(LodePNGBitWriter* writer, Hash* hash,$/;"	f	typeref:typename:unsigned	file:
+deflateFixed	utilities/lodepng.cpp	/^static unsigned deflateFixed(LodePNGBitWriter* writer, Hash* hash,$/;"	f	typeref:typename:unsigned	file:
+deflateNoCompression	utilities/lodepng.cpp	/^static unsigned deflateNoCompression(ucvector* out, const unsigned char* data, size_t datasize) /;"	f	typeref:typename:unsigned	file:
+destroy	utilities/shader.hpp	/^        void   destroy()    { glDeleteProgram(mProgram); }$/;"	f	class:Gloom::Shader	typeref:typename:void
+enableAutoplay	utilities/window.hpp	/^    bool enableAutoplay;$/;"	m	struct:CommandLineOptions	typeref:typename:bool
+enableMusic	utilities/window.hpp	/^    bool enableMusic;$/;"	m	struct:CommandLineOptions	typeref:typename:bool
+encode	utilities/lodepng.cpp	/^unsigned encode(const std::string& filename,$/;"	f	namespace:lodepng	typeref:typename:unsigned
+encode	utilities/lodepng.cpp	/^unsigned encode(std::vector<unsigned char>& out, const unsigned char* in, unsigned w, unsigned h/;"	f	namespace:lodepng	typeref:typename:unsigned
+encode	utilities/lodepng.cpp	/^unsigned encode(std::vector<unsigned char>& out,$/;"	f	namespace:lodepng	typeref:typename:unsigned
+encodeLZ77	utilities/lodepng.cpp	/^static unsigned encodeLZ77(uivector* out, Hash* hash,$/;"	f	typeref:typename:unsigned	file:
+encoder	utilities/lodepng.h	/^  LodePNGEncoderSettings encoder; \/*the encoding settings*\/$/;"	m	struct:LodePNGState	typeref:typename:LodePNGEncoderSettings
+ensureBits17	utilities/lodepng.cpp	/^static unsigned ensureBits17(LodePNGBitReader* reader, size_t nbits) {$/;"	f	typeref:typename:unsigned	file:
+ensureBits25	utilities/lodepng.cpp	/^static LODEPNG_INLINE unsigned ensureBits25(LodePNGBitReader* reader, size_t nbits) {$/;"	f	typeref:typename:LODEPNG_INLINE unsigned	file:
+ensureBits32	utilities/lodepng.cpp	/^static LODEPNG_INLINE unsigned ensureBits32(LodePNGBitReader* reader, size_t nbits) {$/;"	f	typeref:typename:LODEPNG_INLINE unsigned	file:
+ensureBits9	utilities/lodepng.cpp	/^static unsigned ensureBits9(LodePNGBitReader* reader, size_t nbits) {$/;"	f	typeref:typename:unsigned	file:
+error	utilities/lodepng.h	/^  unsigned error;$/;"	m	struct:LodePNGState	typeref:typename:unsigned
+fPitch	utilities/camera.hpp	/^        GLfloat fPitch = 0.0f;$/;"	m	class:Gloom::Camera	typeref:typename:GLfloat
+fYaw	utilities/camera.hpp	/^        GLfloat fYaw   = 0.0f;$/;"	m	class:Gloom::Camera	typeref:typename:GLfloat
+filter	utilities/lodepng.cpp	/^static unsigned filter(unsigned char* out, const unsigned char* in, unsigned w, unsigned h,$/;"	f	typeref:typename:unsigned	file:
+filterScanline	utilities/lodepng.cpp	/^static void filterScanline(unsigned char* out, const unsigned char* scanline, const unsigned cha/;"	f	typeref:typename:void	file:
+filter_method	utilities/lodepng.h	/^  unsigned filter_method;     \/*filter method of the original file*\/$/;"	m	struct:LodePNGInfo	typeref:typename:unsigned
+filter_palette_zero	utilities/lodepng.h	/^  unsigned filter_palette_zero;$/;"	m	struct:LodePNGEncoderSettings	typeref:typename:unsigned
+filter_strategy	utilities/lodepng.h	/^  LodePNGFilterStrategy filter_strategy;$/;"	m	struct:LodePNGEncoderSettings	typeref:typename:LodePNGFilterStrategy
+force_palette	utilities/lodepng.h	/^  unsigned force_palette;$/;"	m	struct:LodePNGEncoderSettings	typeref:typename:unsigned
+freelist	utilities/lodepng.cpp	/^  BPMNode** freelist;$/;"	m	struct:BPMLists	typeref:typename:BPMNode **	file:
+gama_defined	utilities/lodepng.h	/^  unsigned gama_defined; \/* Whether a gAMA chunk is present (0 = not present, 1 = present). *\/$/;"	m	struct:LodePNGInfo	typeref:typename:unsigned
+gama_gamma	utilities/lodepng.h	/^  unsigned gama_gamma;   \/* Gamma exponent times 100000 *\/$/;"	m	struct:LodePNGInfo	typeref:typename:unsigned
+gameElapsedTime	gamelogic.cpp	/^double gameElapsedTime = debug_startTime;$/;"	v	typeref:typename:double
+generateAttribute	utilities/glutils.cpp	/^unsigned int generateAttribute(int id, int elementsPerEntry, std::vector<T> data, bool normalize/;"	f	typeref:typename:unsigned int
+generateBuffer	utilities/glutils.cpp	/^unsigned int generateBuffer(Mesh &mesh) {$/;"	f	typeref:typename:unsigned int
+generateFixedDistanceTree	utilities/lodepng.cpp	/^static unsigned generateFixedDistanceTree(HuffmanTree* tree) {$/;"	f	typeref:typename:unsigned	file:
+generateFixedLitLenTree	utilities/lodepng.cpp	/^static unsigned generateFixedLitLenTree(HuffmanTree* tree) {$/;"	f	typeref:typename:unsigned	file:
+generateSphere	utilities/shapes.cpp	/^Mesh generateSphere(float sphereRadius, int slices, int layers) {$/;"	f	typeref:typename:Mesh
+generateTextGeometryBuffer	utilities/glfont.cpp	/^Mesh generateTextGeometryBuffer(std::string text, float characterHeightOverWidth, float totalTex/;"	f	typeref:typename:Mesh
+get	utilities/shader.hpp	/^        GLuint get()        { return mProgram; }$/;"	f	class:Gloom::Shader	typeref:typename:GLuint
+getHash	utilities/lodepng.cpp	/^static unsigned getHash(const unsigned char* data, size_t size, size_t pos) {$/;"	f	typeref:typename:unsigned	file:
+getNumColorChannels	utilities/lodepng.cpp	/^static unsigned getNumColorChannels(LodePNGColorType colortype) {$/;"	f	typeref:typename:unsigned	file:
+getPaletteTranslucency	utilities/lodepng.cpp	/^static unsigned getPaletteTranslucency(const unsigned char* palette, size_t palettesize) {$/;"	f	typeref:typename:unsigned	file:
+getPixelColorRGBA16	utilities/lodepng.cpp	/^static void getPixelColorRGBA16(unsigned short* r, unsigned short* g, unsigned short* b, unsigne/;"	f	typeref:typename:void	file:
+getPixelColorRGBA8	utilities/lodepng.cpp	/^static void getPixelColorRGBA8(unsigned char* r, unsigned char* g,$/;"	f	typeref:typename:void	file:
+getPixelColorsRGB8	utilities/lodepng.cpp	/^static void getPixelColorsRGB8(unsigned char* LODEPNG_RESTRICT buffer, size_t numpixels,$/;"	f	typeref:typename:void	file:
+getPixelColorsRGBA8	utilities/lodepng.cpp	/^static void getPixelColorsRGBA8(unsigned char* LODEPNG_RESTRICT buffer, size_t numpixels,$/;"	f	typeref:typename:void	file:
+getTimeDeltaSeconds	utilities/timeutils.cpp	/^double getTimeDeltaSeconds() {$/;"	f	typeref:typename:double
+getTreeInflateDynamic	utilities/lodepng.cpp	/^static unsigned getTreeInflateDynamic(HuffmanTree* tree_ll, HuffmanTree* tree_d,$/;"	f	typeref:typename:unsigned	file:
+getTreeInflateFixed	utilities/lodepng.cpp	/^static void getTreeInflateFixed(HuffmanTree* tree_ll, HuffmanTree* tree_d) {$/;"	f	typeref:typename:void	file:
+getUniformFromName	utilities/shader.hpp	/^        GLint getUniformFromName(std::string const &uniformName) {$/;"	f	class:Gloom::Shader	typeref:typename:GLint
+getValueRequiredBits	utilities/lodepng.cpp	/^static unsigned getValueRequiredBits(unsigned char value) {$/;"	f	typeref:typename:unsigned	file:
+getViewMatrix	utilities/camera.hpp	/^        glm::mat4 getViewMatrix() { return matView; }$/;"	f	class:Gloom::Camera	typeref:typename:glm::mat4
+glfwErrorCallback	main.cpp	/^static void glfwErrorCallback(int error, const char *description)$/;"	f	typeref:typename:void	file:
+handleCursorPosInput	utilities/camera.hpp	/^        void handleCursorPosInput(double xpos, double ypos)$/;"	f	class:Gloom::Camera	typeref:typename:void
+handleKeyboardInput	program.cpp	/^void handleKeyboardInput(GLFWwindow* window)$/;"	f	typeref:typename:void
+handleKeyboardInputs	utilities/camera.hpp	/^        void handleKeyboardInputs(int key, int action)$/;"	f	class:Gloom::Camera	typeref:typename:void
+handleMouseButtonInputs	utilities/camera.hpp	/^        void handleMouseButtonInputs(int button, int action)$/;"	f	class:Gloom::Camera	typeref:typename:void
+hasLost	gamelogic.cpp	/^bool hasLost = false;$/;"	v	typeref:typename:bool
+hasStarted	gamelogic.cpp	/^bool hasStarted = false;$/;"	v	typeref:typename:bool
+hash_cleanup	utilities/lodepng.cpp	/^static void hash_cleanup(Hash* hash) {$/;"	f	typeref:typename:void	file:
+hash_init	utilities/lodepng.cpp	/^static unsigned hash_init(Hash* hash, unsigned windowsize) {$/;"	f	typeref:typename:unsigned	file:
+head	utilities/lodepng.cpp	/^  int* head; \/*hash value to head circular pos - can be outdated if went around window*\/$/;"	m	struct:Hash	typeref:typename:int *	file:
+headz	utilities/lodepng.cpp	/^  int* headz; \/*similar to head, but for chainz*\/$/;"	m	struct:Hash	typeref:typename:int *	file:
+height	utilities/imageLoader.hpp	/^	unsigned int width, height;$/;"	m	struct:PNGImage	typeref:typename:unsigned int
+hour	utilities/lodepng.h	/^  unsigned hour;    \/*0-23*\/$/;"	m	struct:LodePNGTime	typeref:typename:unsigned
+huffmanDecodeSymbol	utilities/lodepng.cpp	/^static unsigned huffmanDecodeSymbol(LodePNGBitReader* reader, const HuffmanTree* codetree) {$/;"	f	typeref:typename:unsigned	file:
+iccp_defined	utilities/lodepng.h	/^  unsigned iccp_defined;      \/* Whether an iCCP chunk is present (0 = not present, 1 = present/;"	m	struct:LodePNGInfo	typeref:typename:unsigned
+iccp_name	utilities/lodepng.h	/^  char* iccp_name;            \/* Null terminated string with profile name, 1-79 bytes *\/$/;"	m	struct:LodePNGInfo	typeref:typename:char *
+iccp_profile	utilities/lodepng.h	/^  unsigned char* iccp_profile;$/;"	m	struct:LodePNGInfo	typeref:typename:unsigned char *
+iccp_profile_size	utilities/lodepng.h	/^  unsigned iccp_profile_size; \/* The size of iccp_profile in bytes *\/$/;"	m	struct:LodePNGInfo	typeref:typename:unsigned
+ignore_adler32	utilities/lodepng.h	/^  unsigned ignore_adler32; \/*if 1, continue and don't give an error message if the Adler32 chec/;"	m	struct:LodePNGDecompressSettings	typeref:typename:unsigned
+ignore_crc	utilities/lodepng.h	/^  unsigned ignore_crc; \/*ignore CRC checksums*\/$/;"	m	struct:LodePNGDecoderSettings	typeref:typename:unsigned
+ignore_critical	utilities/lodepng.h	/^  unsigned ignore_critical; \/*ignore unknown critical chunks*\/$/;"	m	struct:LodePNGDecoderSettings	typeref:typename:unsigned
+ignore_end	utilities/lodepng.h	/^  unsigned ignore_end; \/*ignore issues at end of file if possible (missing IEND chunk, too larg/;"	m	struct:LodePNGDecoderSettings	typeref:typename:unsigned
+ignore_nlen	utilities/lodepng.h	/^  unsigned ignore_nlen; \/*ignore complement of len checksum in uncompressed blocks*\/$/;"	m	struct:LodePNGDecompressSettings	typeref:typename:unsigned
+ilog2	utilities/lodepng.cpp	/^static size_t ilog2(size_t i) {$/;"	f	typeref:typename:size_t	file:
+ilog2i	utilities/lodepng.cpp	/^static size_t ilog2i(size_t i) {$/;"	f	typeref:typename:size_t	file:
+in_use	utilities/lodepng.cpp	/^  int in_use;$/;"	m	struct:BPMNode	typeref:typename:int	file:
+index	utilities/lodepng.cpp	/^  int index; \/*the payload. Only has a meaningful value if this is in the last level*\/$/;"	m	struct:ColorTree	typeref:typename:int	file:
+index	utilities/lodepng.cpp	/^  unsigned index; \/*index of this leaf node (called "count" in the paper)*\/$/;"	m	struct:BPMNode	typeref:typename:unsigned	file:
+indices	utilities/mesh.h	/^    std::vector<unsigned int> indices;$/;"	m	struct:Mesh	typeref:typename:std::vector<unsigned int>
+inflate	utilities/lodepng.cpp	/^static unsigned inflate(unsigned char** out, size_t* outsize,$/;"	f	typeref:typename:unsigned	file:
+inflateHuffmanBlock	utilities/lodepng.cpp	/^static unsigned inflateHuffmanBlock(ucvector* out, size_t* pos, LodePNGBitReader* reader,$/;"	f	typeref:typename:unsigned	file:
+inflateNoCompression	utilities/lodepng.cpp	/^static unsigned inflateNoCompression(ucvector* out, size_t* pos,$/;"	f	typeref:typename:unsigned	file:
+info_png	utilities/lodepng.h	/^  LodePNGInfo info_png; \/*info of the PNG image obtained after decoding*\/$/;"	m	struct:LodePNGState	typeref:typename:LodePNGInfo
+info_raw	utilities/lodepng.h	/^  LodePNGColorMode info_raw; \/*specifies the format in which you would like to get the raw pixe/;"	m	struct:LodePNGState	typeref:typename:LodePNGColorMode
+initGame	gamelogic.cpp	/^void initGame(GLFWwindow* window, CommandLineOptions gameOptions) {$/;"	f	typeref:typename:void
+initialise	main.cpp	/^GLFWwindow* initialise()$/;"	f	typeref:typename:GLFWwindow *
+interlace_method	utilities/lodepng.h	/^  unsigned interlace_method;  \/*interlace method of the original file: 0=none, 1=Adam7*\/$/;"	m	struct:LodePNGInfo	typeref:typename:unsigned
+isGrayICCProfile	utilities/lodepng.cpp	/^static unsigned isGrayICCProfile(const unsigned char* profile, unsigned size) {$/;"	f	typeref:typename:unsigned	file:
+isMousePressed	utilities/camera.hpp	/^        GLboolean isMousePressed = false;$/;"	m	class:Gloom::Camera	typeref:typename:GLboolean
+isPaused	gamelogic.cpp	/^bool isPaused = false;$/;"	v	typeref:typename:bool
+isRGBICCProfile	utilities/lodepng.cpp	/^static unsigned isRGBICCProfile(const unsigned char* profile, unsigned size) {$/;"	f	typeref:typename:unsigned	file:
+isValid	utilities/shader.hpp	/^        bool isValid()$/;"	f	class:Gloom::Shader	typeref:typename:bool
+itext_keys	utilities/lodepng.h	/^  char** itext_keys; \/*the English keyword of the text chunk (e.g. "Comment")*\/$/;"	m	struct:LodePNGInfo	typeref:typename:char **
+itext_langtags	utilities/lodepng.h	/^  char** itext_langtags; \/*language tag for this text's language, ISO\/IEC 646 string, e.g. ISO/;"	m	struct:LodePNGInfo	typeref:typename:char **
+itext_num	utilities/lodepng.h	/^  size_t itext_num; \/*the amount of international texts in this PNG*\/$/;"	m	struct:LodePNGInfo	typeref:typename:size_t
+itext_strings	utilities/lodepng.h	/^  char** itext_strings; \/*the actual international text - UTF-8 string*\/$/;"	m	struct:LodePNGInfo	typeref:typename:char **
+itext_transkeys	utilities/lodepng.h	/^  char** itext_transkeys; \/*keyword translated to the international language - UTF-8 string*\/$/;"	m	struct:LodePNGInfo	typeref:typename:char **
+jumpedToNextFrame	gamelogic.cpp	/^bool jumpedToNextFrame = false;$/;"	v	typeref:typename:bool
+key	utilities/lodepng.h	/^  unsigned key; \/*image is not opaque and color key is possible instead of full alpha*\/$/;"	m	struct:LodePNGColorStats	typeref:typename:unsigned
+keyFrameDirections	timestamps.h	/^const std::vector<KeyFrameAction> keyFrameDirections =$/;"	v	typeref:typename:const std::vector<KeyFrameAction>
+keyFrameTimeStamps	timestamps.h	/^const std::vector<double> keyFrameTimeStamps =$/;"	v	typeref:typename:const std::vector<double>
+key_b	utilities/lodepng.h	/^  unsigned key_b;       \/*blue component of color key*\/$/;"	m	struct:LodePNGColorMode	typeref:typename:unsigned
+key_b	utilities/lodepng.h	/^  unsigned short key_b;$/;"	m	struct:LodePNGColorStats	typeref:typename:unsigned short
+key_defined	utilities/lodepng.h	/^  unsigned key_defined; \/*is a transparent color key given? 0 = false, 1 = true*\/$/;"	m	struct:LodePNGColorMode	typeref:typename:unsigned
+key_g	utilities/lodepng.h	/^  unsigned key_g;       \/*green component of color key*\/$/;"	m	struct:LodePNGColorMode	typeref:typename:unsigned
+key_g	utilities/lodepng.h	/^  unsigned short key_g;$/;"	m	struct:LodePNGColorStats	typeref:typename:unsigned short
+key_r	utilities/lodepng.h	/^  unsigned key_r;       \/*red\/grayscale component of color key*\/$/;"	m	struct:LodePNGColorMode	typeref:typename:unsigned
+key_r	utilities/lodepng.h	/^  unsigned short key_r; \/*key values, always as 16-bit, in 8-bit case the byte is duplicated, e/;"	m	struct:LodePNGColorStats	typeref:typename:unsigned short
+keysInUse	utilities/camera.hpp	/^        GLboolean keysInUse[512];$/;"	m	class:Gloom::Camera	typeref:typename:GLboolean[512]
+lastMouseX	gamelogic.cpp	/^double lastMouseX = windowWidth \/ 2;$/;"	v	typeref:typename:double
+lastMouseY	gamelogic.cpp	/^double lastMouseY = windowHeight \/ 2;$/;"	v	typeref:typename:double
+lastXPos	utilities/camera.hpp	/^        GLfloat lastXPos = 0.0f;$/;"	m	class:Gloom::Camera	typeref:typename:GLfloat
+lastYPos	utilities/camera.hpp	/^        GLfloat lastYPos = 0.0f;$/;"	m	class:Gloom::Camera	typeref:typename:GLfloat
+lazymatching	utilities/lodepng.h	/^  unsigned lazymatching; \/*use lazy matching: better compression but a bit slower. Default: tru/;"	m	struct:LodePNGCompressSettings	typeref:typename:unsigned
+leftCornerLight	gamelogic.cpp	/^SceneNode* leftCornerLight;$/;"	v	typeref:typename:SceneNode *
+lengths	utilities/lodepng.cpp	/^  unsigned* lengths; \/*the lengths of the huffman codes*\/$/;"	m	struct:HuffmanTree	typeref:typename:unsigned *	file:
+link	utilities/shader.hpp	/^        void link()$/;"	f	class:Gloom::Shader	typeref:typename:void
+listsize	utilities/lodepng.cpp	/^  unsigned listsize;$/;"	m	struct:BPMLists	typeref:typename:unsigned	file:
+loadPNGFile	utilities/imageLoader.cpp	/^PNGImage loadPNGFile(std::string fileName)$/;"	f	typeref:typename:PNGImage
+load_file	utilities/lodepng.cpp	/^unsigned load_file(std::vector<unsigned char>& buffer, const std::string& filename) {$/;"	f	namespace:lodepng	typeref:typename:unsigned
+lode_png_test_bitreader	utilities/lodepng.cpp	/^unsigned lode_png_test_bitreader(const unsigned char* data, size_t size,$/;"	f	typeref:typename:unsigned
+lodepng	utilities/lodepng.cpp	/^namespace lodepng {$/;"	n	file:
+lodepng	utilities/lodepng.h	/^namespace lodepng {$/;"	n
+lodepng_add_itext	utilities/lodepng.cpp	/^unsigned lodepng_add_itext(LodePNGInfo* info, const char* key, const char* langtag,$/;"	f	typeref:typename:unsigned
+lodepng_add_text	utilities/lodepng.cpp	/^unsigned lodepng_add_text(LodePNGInfo* info, const char* key, const char* str) {$/;"	f	typeref:typename:unsigned
+lodepng_addofl	utilities/lodepng.cpp	/^static int lodepng_addofl(size_t a, size_t b, size_t* result) {$/;"	f	typeref:typename:int	file:
+lodepng_assign_icc	utilities/lodepng.cpp	/^static unsigned lodepng_assign_icc(LodePNGInfo* info, const char* name, const unsigned char* pro/;"	f	typeref:typename:unsigned	file:
+lodepng_buffer_file	utilities/lodepng.cpp	/^static unsigned lodepng_buffer_file(unsigned char* out, size_t size, const char* filename) {$/;"	f	typeref:typename:unsigned	file:
+lodepng_can_have_alpha	utilities/lodepng.cpp	/^unsigned lodepng_can_have_alpha(const LodePNGColorMode* info) {$/;"	f	typeref:typename:unsigned
+lodepng_chunk_ancillary	utilities/lodepng.cpp	/^unsigned char lodepng_chunk_ancillary(const unsigned char* chunk) {$/;"	f	typeref:typename:unsigned char
+lodepng_chunk_append	utilities/lodepng.cpp	/^unsigned lodepng_chunk_append(unsigned char** out, size_t* outlength, const unsigned char* chunk/;"	f	typeref:typename:unsigned
+lodepng_chunk_check_crc	utilities/lodepng.cpp	/^unsigned lodepng_chunk_check_crc(const unsigned char* chunk) {$/;"	f	typeref:typename:unsigned
+lodepng_chunk_create	utilities/lodepng.cpp	/^unsigned lodepng_chunk_create(unsigned char** out, size_t* outlength, unsigned length,$/;"	f	typeref:typename:unsigned
+lodepng_chunk_data	utilities/lodepng.cpp	/^unsigned char* lodepng_chunk_data(unsigned char* chunk) {$/;"	f	typeref:typename:unsigned char *
+lodepng_chunk_data_const	utilities/lodepng.cpp	/^const unsigned char* lodepng_chunk_data_const(const unsigned char* chunk) {$/;"	f	typeref:typename:const unsigned char *
+lodepng_chunk_find	utilities/lodepng.cpp	/^unsigned char* lodepng_chunk_find(unsigned char* chunk, unsigned char* end, const char type[5]) /;"	f	typeref:typename:unsigned char *
+lodepng_chunk_find_const	utilities/lodepng.cpp	/^const unsigned char* lodepng_chunk_find_const(const unsigned char* chunk, const unsigned char* e/;"	f	typeref:typename:const unsigned char *
+lodepng_chunk_generate_crc	utilities/lodepng.cpp	/^void lodepng_chunk_generate_crc(unsigned char* chunk) {$/;"	f	typeref:typename:void
+lodepng_chunk_length	utilities/lodepng.cpp	/^unsigned lodepng_chunk_length(const unsigned char* chunk) {$/;"	f	typeref:typename:unsigned
+lodepng_chunk_next	utilities/lodepng.cpp	/^unsigned char* lodepng_chunk_next(unsigned char* chunk, unsigned char* end) {$/;"	f	typeref:typename:unsigned char *
+lodepng_chunk_next_const	utilities/lodepng.cpp	/^const unsigned char* lodepng_chunk_next_const(const unsigned char* chunk, const unsigned char* e/;"	f	typeref:typename:const unsigned char *
+lodepng_chunk_private	utilities/lodepng.cpp	/^unsigned char lodepng_chunk_private(const unsigned char* chunk) {$/;"	f	typeref:typename:unsigned char
+lodepng_chunk_safetocopy	utilities/lodepng.cpp	/^unsigned char lodepng_chunk_safetocopy(const unsigned char* chunk) {$/;"	f	typeref:typename:unsigned char
+lodepng_chunk_type	utilities/lodepng.cpp	/^void lodepng_chunk_type(char type[5], const unsigned char* chunk) {$/;"	f	typeref:typename:void
+lodepng_chunk_type_equals	utilities/lodepng.cpp	/^unsigned char lodepng_chunk_type_equals(const unsigned char* chunk, const char* type) {$/;"	f	typeref:typename:unsigned char
+lodepng_clear_icc	utilities/lodepng.cpp	/^void lodepng_clear_icc(LodePNGInfo* info) {$/;"	f	typeref:typename:void
+lodepng_clear_itext	utilities/lodepng.cpp	/^void lodepng_clear_itext(LodePNGInfo* info) {$/;"	f	typeref:typename:void
+lodepng_clear_text	utilities/lodepng.cpp	/^void lodepng_clear_text(LodePNGInfo* info) {$/;"	f	typeref:typename:void
+lodepng_color_mode_alloc_palette	utilities/lodepng.cpp	/^void lodepng_color_mode_alloc_palette(LodePNGColorMode* info) {$/;"	f	typeref:typename:void
+lodepng_color_mode_cleanup	utilities/lodepng.cpp	/^void lodepng_color_mode_cleanup(LodePNGColorMode* info) {$/;"	f	typeref:typename:void
+lodepng_color_mode_copy	utilities/lodepng.cpp	/^unsigned lodepng_color_mode_copy(LodePNGColorMode* dest, const LodePNGColorMode* source) {$/;"	f	typeref:typename:unsigned
+lodepng_color_mode_equal	utilities/lodepng.cpp	/^static int lodepng_color_mode_equal(const LodePNGColorMode* a, const LodePNGColorMode* b) {$/;"	f	typeref:typename:int	file:
+lodepng_color_mode_init	utilities/lodepng.cpp	/^void lodepng_color_mode_init(LodePNGColorMode* info) {$/;"	f	typeref:typename:void
+lodepng_color_mode_make	utilities/lodepng.cpp	/^LodePNGColorMode lodepng_color_mode_make(LodePNGColorType colortype, unsigned bitdepth) {$/;"	f	typeref:typename:LodePNGColorMode
+lodepng_color_stats_add	utilities/lodepng.cpp	/^static void lodepng_color_stats_add(LodePNGColorStats* stats,$/;"	f	typeref:typename:void	file:
+lodepng_color_stats_init	utilities/lodepng.cpp	/^void lodepng_color_stats_init(LodePNGColorStats* stats) {$/;"	f	typeref:typename:void
+lodepng_compress_settings_init	utilities/lodepng.cpp	/^void lodepng_compress_settings_init(LodePNGCompressSettings* settings) {$/;"	f	typeref:typename:void
+lodepng_compute_color_stats	utilities/lodepng.cpp	/^void lodepng_compute_color_stats(LodePNGColorStats* stats,$/;"	f	typeref:typename:void
+lodepng_convert	utilities/lodepng.cpp	/^unsigned lodepng_convert(unsigned char* out, const unsigned char* in,$/;"	f	typeref:typename:unsigned
+lodepng_convert_rgb	utilities/lodepng.cpp	/^unsigned lodepng_convert_rgb($/;"	f	typeref:typename:unsigned
+lodepng_crc32	utilities/lodepng.cpp	/^unsigned lodepng_crc32(const unsigned char* data, size_t length) {$/;"	f	typeref:typename:unsigned
+lodepng_crc32_table	utilities/lodepng.cpp	/^static unsigned lodepng_crc32_table[256] = {$/;"	v	typeref:typename:unsigned[256]	file:
+lodepng_decode	utilities/lodepng.cpp	/^unsigned lodepng_decode(unsigned char** out, unsigned* w, unsigned* h,$/;"	f	typeref:typename:unsigned
+lodepng_decode24	utilities/lodepng.cpp	/^unsigned lodepng_decode24(unsigned char** out, unsigned* w, unsigned* h, const unsigned char* in/;"	f	typeref:typename:unsigned
+lodepng_decode24_file	utilities/lodepng.cpp	/^unsigned lodepng_decode24_file(unsigned char** out, unsigned* w, unsigned* h, const char* filena/;"	f	typeref:typename:unsigned
+lodepng_decode32	utilities/lodepng.cpp	/^unsigned lodepng_decode32(unsigned char** out, unsigned* w, unsigned* h, const unsigned char* in/;"	f	typeref:typename:unsigned
+lodepng_decode32_file	utilities/lodepng.cpp	/^unsigned lodepng_decode32_file(unsigned char** out, unsigned* w, unsigned* h, const char* filena/;"	f	typeref:typename:unsigned
+lodepng_decode_file	utilities/lodepng.cpp	/^unsigned lodepng_decode_file(unsigned char** out, unsigned* w, unsigned* h, const char* filename/;"	f	typeref:typename:unsigned
+lodepng_decode_memory	utilities/lodepng.cpp	/^unsigned lodepng_decode_memory(unsigned char** out, unsigned* w, unsigned* h, const unsigned cha/;"	f	typeref:typename:unsigned
+lodepng_decoder_settings_init	utilities/lodepng.cpp	/^void lodepng_decoder_settings_init(LodePNGDecoderSettings* settings) {$/;"	f	typeref:typename:void
+lodepng_decompress_settings_init	utilities/lodepng.cpp	/^void lodepng_decompress_settings_init(LodePNGDecompressSettings* settings) {$/;"	f	typeref:typename:void
+lodepng_default_compress_settings	utilities/lodepng.cpp	/^const LodePNGCompressSettings lodepng_default_compress_settings = {2, 1, DEFAULT_WINDOWSIZE, 3, /;"	v	typeref:typename:const LodePNGCompressSettings
+lodepng_default_decompress_settings	utilities/lodepng.cpp	/^const LodePNGDecompressSettings lodepng_default_decompress_settings = {0, 0, 0, 0, 0};$/;"	v	typeref:typename:const LodePNGDecompressSettings
+lodepng_deflate	utilities/lodepng.cpp	/^unsigned lodepng_deflate(unsigned char** out, size_t* outsize,$/;"	f	typeref:typename:unsigned
+lodepng_deflatev	utilities/lodepng.cpp	/^static unsigned lodepng_deflatev(ucvector* out, const unsigned char* in, size_t insize,$/;"	f	typeref:typename:unsigned	file:
+lodepng_encode	utilities/lodepng.cpp	/^unsigned lodepng_encode(unsigned char** out, size_t* outsize,$/;"	f	typeref:typename:unsigned
+lodepng_encode24	utilities/lodepng.cpp	/^unsigned lodepng_encode24(unsigned char** out, size_t* outsize, const unsigned char* image, unsi/;"	f	typeref:typename:unsigned
+lodepng_encode24_file	utilities/lodepng.cpp	/^unsigned lodepng_encode24_file(const char* filename, const unsigned char* image, unsigned w, uns/;"	f	typeref:typename:unsigned
+lodepng_encode32	utilities/lodepng.cpp	/^unsigned lodepng_encode32(unsigned char** out, size_t* outsize, const unsigned char* image, unsi/;"	f	typeref:typename:unsigned
+lodepng_encode32_file	utilities/lodepng.cpp	/^unsigned lodepng_encode32_file(const char* filename, const unsigned char* image, unsigned w, uns/;"	f	typeref:typename:unsigned
+lodepng_encode_file	utilities/lodepng.cpp	/^unsigned lodepng_encode_file(const char* filename, const unsigned char* image, unsigned w, unsig/;"	f	typeref:typename:unsigned
+lodepng_encode_memory	utilities/lodepng.cpp	/^unsigned lodepng_encode_memory(unsigned char** out, size_t* outsize, const unsigned char* image,$/;"	f	typeref:typename:unsigned
+lodepng_encoder_settings_init	utilities/lodepng.cpp	/^void lodepng_encoder_settings_init(LodePNGEncoderSettings* settings) {$/;"	f	typeref:typename:void
+lodepng_error_text	utilities/lodepng.cpp	/^const char* lodepng_error_text(unsigned code) {$/;"	f	typeref:typename:const char *
+lodepng_filesize	utilities/lodepng.cpp	/^static long lodepng_filesize(const char* filename) {$/;"	f	typeref:typename:long	file:
+lodepng_free	utilities/lodepng.cpp	/^static void lodepng_free(void* ptr) {$/;"	f	typeref:typename:void	file:
+lodepng_get_bpp	utilities/lodepng.cpp	/^unsigned lodepng_get_bpp(const LodePNGColorMode* info) {$/;"	f	typeref:typename:unsigned
+lodepng_get_bpp_lct	utilities/lodepng.cpp	/^static unsigned lodepng_get_bpp_lct(LodePNGColorType colortype, unsigned bitdepth) {$/;"	f	typeref:typename:unsigned	file:
+lodepng_get_channels	utilities/lodepng.cpp	/^unsigned lodepng_get_channels(const LodePNGColorMode* info) {$/;"	f	typeref:typename:unsigned
+lodepng_get_raw_size	utilities/lodepng.cpp	/^size_t lodepng_get_raw_size(unsigned w, unsigned h, const LodePNGColorMode* color) {$/;"	f	typeref:typename:size_t
+lodepng_get_raw_size_idat	utilities/lodepng.cpp	/^static size_t lodepng_get_raw_size_idat(unsigned w, unsigned h, const LodePNGColorMode* color) {$/;"	f	typeref:typename:size_t	file:
+lodepng_get_raw_size_lct	utilities/lodepng.cpp	/^static size_t lodepng_get_raw_size_lct(unsigned w, unsigned h, LodePNGColorType colortype, unsig/;"	f	typeref:typename:size_t	file:
+lodepng_gtofl	utilities/lodepng.cpp	/^static int lodepng_gtofl(size_t a, size_t b, size_t c) {$/;"	f	typeref:typename:int	file:
+lodepng_has_palette_alpha	utilities/lodepng.cpp	/^unsigned lodepng_has_palette_alpha(const LodePNGColorMode* info) {$/;"	f	typeref:typename:unsigned
+lodepng_huffman_code_lengths	utilities/lodepng.cpp	/^unsigned lodepng_huffman_code_lengths(unsigned* lengths, const unsigned* frequencies,$/;"	f	typeref:typename:unsigned
+lodepng_inflate	utilities/lodepng.cpp	/^unsigned lodepng_inflate(unsigned char** out, size_t* outsize,$/;"	f	typeref:typename:unsigned
+lodepng_inflatev	utilities/lodepng.cpp	/^static unsigned lodepng_inflatev(ucvector* out,$/;"	f	typeref:typename:unsigned	file:
+lodepng_info_cleanup	utilities/lodepng.cpp	/^void lodepng_info_cleanup(LodePNGInfo* info) {$/;"	f	typeref:typename:void
+lodepng_info_copy	utilities/lodepng.cpp	/^unsigned lodepng_info_copy(LodePNGInfo* dest, const LodePNGInfo* source) {$/;"	f	typeref:typename:unsigned
+lodepng_info_init	utilities/lodepng.cpp	/^void lodepng_info_init(LodePNGInfo* info) {$/;"	f	typeref:typename:void
+lodepng_inspect	utilities/lodepng.cpp	/^unsigned lodepng_inspect(unsigned* w, unsigned* h, LodePNGState* state,$/;"	f	typeref:typename:unsigned
+lodepng_inspect_chunk	utilities/lodepng.cpp	/^unsigned lodepng_inspect_chunk(LodePNGState* state, size_t pos,$/;"	f	typeref:typename:unsigned
+lodepng_is_alpha_type	utilities/lodepng.cpp	/^unsigned lodepng_is_alpha_type(const LodePNGColorMode* info) {$/;"	f	typeref:typename:unsigned
+lodepng_is_greyscale_type	utilities/lodepng.cpp	/^unsigned lodepng_is_greyscale_type(const LodePNGColorMode* info) {$/;"	f	typeref:typename:unsigned
+lodepng_is_palette_type	utilities/lodepng.cpp	/^unsigned lodepng_is_palette_type(const LodePNGColorMode* info) {$/;"	f	typeref:typename:unsigned
+lodepng_load_file	utilities/lodepng.cpp	/^unsigned lodepng_load_file(unsigned char** out, size_t* outsize, const char* filename) {$/;"	f	typeref:typename:unsigned
+lodepng_malloc	utilities/lodepng.cpp	/^static void* lodepng_malloc(size_t size) {$/;"	f	typeref:typename:void *	file:
+lodepng_memcpy	utilities/lodepng.cpp	/^static void lodepng_memcpy(void* LODEPNG_RESTRICT dst,$/;"	f	typeref:typename:void	file:
+lodepng_mulofl	utilities/lodepng.cpp	/^static int lodepng_mulofl(size_t a, size_t b, size_t* result) {$/;"	f	typeref:typename:int	file:
+lodepng_palette_add	utilities/lodepng.cpp	/^unsigned lodepng_palette_add(LodePNGColorMode* info,$/;"	f	typeref:typename:unsigned
+lodepng_palette_clear	utilities/lodepng.cpp	/^void lodepng_palette_clear(LodePNGColorMode* info) {$/;"	f	typeref:typename:void
+lodepng_pixel_overflow	utilities/lodepng.cpp	/^static int lodepng_pixel_overflow(unsigned w, unsigned h,$/;"	f	typeref:typename:int	file:
+lodepng_read32bitInt	utilities/lodepng.cpp	/^static unsigned lodepng_read32bitInt(const unsigned char* buffer) {$/;"	f	typeref:typename:unsigned	file:
+lodepng_realloc	utilities/lodepng.cpp	/^static void* lodepng_realloc(void* ptr, size_t new_size) {$/;"	f	typeref:typename:void *	file:
+lodepng_save_file	utilities/lodepng.cpp	/^unsigned lodepng_save_file(const unsigned char* buffer, size_t buffersize, const char* filename)/;"	f	typeref:typename:unsigned
+lodepng_set32bitInt	utilities/lodepng.cpp	/^static void lodepng_set32bitInt(unsigned char* buffer, unsigned value) {$/;"	f	typeref:typename:void	file:
+lodepng_set_icc	utilities/lodepng.cpp	/^unsigned lodepng_set_icc(LodePNGInfo* info, const char* name, const unsigned char* profile, unsi/;"	f	typeref:typename:unsigned
+lodepng_state_cleanup	utilities/lodepng.cpp	/^void lodepng_state_cleanup(LodePNGState* state) {$/;"	f	typeref:typename:void
+lodepng_state_copy	utilities/lodepng.cpp	/^void lodepng_state_copy(LodePNGState* dest, const LodePNGState* source) {$/;"	f	typeref:typename:void
+lodepng_state_init	utilities/lodepng.cpp	/^void lodepng_state_init(LodePNGState* state) {$/;"	f	typeref:typename:void
+lodepng_strlen	utilities/lodepng.cpp	/^static size_t lodepng_strlen(const char* a) {$/;"	f	typeref:typename:size_t	file:
+lodepng_zlib_compress	utilities/lodepng.cpp	/^unsigned lodepng_zlib_compress(unsigned char** out, size_t* outsize, const unsigned char* in,$/;"	f	typeref:typename:unsigned
+lodepng_zlib_decompress	utilities/lodepng.cpp	/^unsigned lodepng_zlib_decompress(unsigned char** out, size_t* outsize, const unsigned char* in,$/;"	f	typeref:typename:unsigned
+mLength	utilities/shader.hpp	/^        GLint  mLength;$/;"	m	class:Gloom::Shader	typeref:typename:GLint
+mProgram	utilities/shader.hpp	/^        GLuint mProgram;$/;"	m	class:Gloom::Shader	typeref:typename:GLuint
+mStatus	utilities/shader.hpp	/^        GLint  mStatus;$/;"	m	class:Gloom::Shader	typeref:typename:GLint
+main	main.cpp	/^int main(int argc, const char* argb[])$/;"	f	typeref:typename:int
+makeBasicShader	utilities/shader.hpp	/^        void makeBasicShader(std::string const &vertexFilename,$/;"	f	class:Gloom::Shader	typeref:typename:void
+matView	utilities/camera.hpp	/^        glm::mat4 matView;$/;"	m	class:Gloom::Camera	typeref:typename:glm::mat4
+maxbitlen	utilities/lodepng.cpp	/^  unsigned maxbitlen; \/*maximum number of bits a single code can get*\/$/;"	m	struct:HuffmanTree	typeref:typename:unsigned	file:
+memory	utilities/lodepng.cpp	/^  BPMNode* memory;$/;"	m	struct:BPMLists	typeref:typename:BPMNode *	file:
+memsize	utilities/lodepng.cpp	/^  unsigned memsize;$/;"	m	struct:BPMLists	typeref:typename:unsigned	file:
+minmatch	utilities/lodepng.h	/^  unsigned minmatch; \/*minimum lz77 length. 3 is normally best, 6 can be better for some PNGs. /;"	m	struct:LodePNGCompressSettings	typeref:typename:unsigned
+minute	utilities/lodepng.h	/^  unsigned minute;  \/*0-59*\/$/;"	m	struct:LodePNGTime	typeref:typename:unsigned
+month	utilities/lodepng.h	/^  unsigned month;   \/*1-12*\/$/;"	m	struct:LodePNGTime	typeref:typename:unsigned
+mouseCallback	gamelogic.cpp	/^void mouseCallback(GLFWwindow* window, double x, double y) {$/;"	f	typeref:typename:void
+mouseLeftPressed	gamelogic.cpp	/^bool mouseLeftPressed   = false;$/;"	v	typeref:typename:bool
+mouseLeftReleased	gamelogic.cpp	/^bool mouseLeftReleased  = false;$/;"	v	typeref:typename:bool
+mouseRightPressed	gamelogic.cpp	/^bool mouseRightPressed  = false;$/;"	v	typeref:typename:bool
+mouseRightReleased	gamelogic.cpp	/^bool mouseRightReleased = false;$/;"	v	typeref:typename:bool
+mouseSensitivity	gamelogic.cpp	/^double mouseSensitivity = 1.0;$/;"	v	typeref:typename:double
+nextfree	utilities/lodepng.cpp	/^  unsigned nextfree;$/;"	m	struct:BPMLists	typeref:typename:unsigned	file:
+nicematch	utilities/lodepng.h	/^  unsigned nicematch; \/*stop searching if >= this length found. Set to 258 for best compression/;"	m	struct:LodePNGCompressSettings	typeref:typename:unsigned
+nodeType	sceneGraph.hpp	/^  SceneNodeType nodeType;$/;"	m	struct:SceneNode	typeref:typename:SceneNodeType
+normals	utilities/mesh.h	/^    std::vector<glm::vec3> normals;$/;"	m	struct:Mesh	typeref:typename:std::vector<glm::vec3>
+numcodes	utilities/lodepng.cpp	/^  unsigned numcodes; \/*number of symbols in the alphabet = number of codes*\/$/;"	m	struct:HuffmanTree	typeref:typename:unsigned	file:
+numcolors	utilities/lodepng.h	/^  unsigned numcolors; \/*amount of colors, up to 257. Not valid if bits == 16 or allow_palette i/;"	m	struct:LodePNGColorStats	typeref:typename:unsigned
+numfree	utilities/lodepng.cpp	/^  unsigned numfree;$/;"	m	struct:BPMLists	typeref:typename:unsigned	file:
+numpixels	utilities/lodepng.h	/^  size_t numpixels;$/;"	m	struct:LodePNGColorStats	typeref:typename:size_t
+operator =	utilities/lodepng.cpp	/^State& State::operator=(const State& other) {$/;"	f	class:lodepng::State	typeref:typename:State &
+options	gamelogic.cpp	/^CommandLineOptions options;$/;"	v	typeref:typename:CommandLineOptions
+padDimensions	gamelogic.cpp	/^const glm::vec3 padDimensions(30, 3, 40);$/;"	v	typeref:typename:const glm::vec3
+padLight	gamelogic.cpp	/^SceneNode* padLight;$/;"	v	typeref:typename:SceneNode *
+padNode	gamelogic.cpp	/^SceneNode* padNode;$/;"	v	typeref:typename:SceneNode *
+padPositionX	gamelogic.cpp	/^double padPositionX = 0;$/;"	v	typeref:typename:double
+padPositionZ	gamelogic.cpp	/^double padPositionZ = 0;$/;"	v	typeref:typename:double
+paethPredictor	utilities/lodepng.cpp	/^static unsigned char paethPredictor(short a, short b, short c) {$/;"	f	typeref:typename:unsigned char	file:
+palette	utilities/lodepng.h	/^  unsigned char palette[1024]; \/*Remembers up to the first 256 RGBA colors, in no particular or/;"	m	struct:LodePNGColorStats	typeref:typename:unsigned char[1024]
+palette	utilities/lodepng.h	/^  unsigned char* palette; \/*palette in RGBARGBA... order. When allocated, must be either 0, or /;"	m	struct:LodePNGColorMode	typeref:typename:unsigned char *
+palettesize	utilities/lodepng.h	/^  size_t palettesize; \/*palette size in number of colors (amount of bytes is 4 * palettesize)*\/$/;"	m	struct:LodePNGColorMode	typeref:typename:size_t
+peekBits	utilities/lodepng.cpp	/^static unsigned peekBits(LodePNGBitReader* reader, size_t nbits) {$/;"	f	typeref:typename:unsigned	file:
+phys_defined	utilities/lodepng.h	/^  unsigned phys_defined; \/*if 0, there is no pHYs chunk and the values below are undefined, if /;"	m	struct:LodePNGInfo	typeref:typename:unsigned
+phys_unit	utilities/lodepng.h	/^  unsigned phys_unit; \/*may be 0 (unknown unit) or 1 (metre)*\/$/;"	m	struct:LodePNGInfo	typeref:typename:unsigned
+phys_x	utilities/lodepng.h	/^  unsigned phys_x; \/*pixels per unit in x direction*\/$/;"	m	struct:LodePNGInfo	typeref:typename:unsigned
+phys_y	utilities/lodepng.h	/^  unsigned phys_y; \/*pixels per unit in y direction*\/$/;"	m	struct:LodePNGInfo	typeref:typename:unsigned
+pixels	utilities/imageLoader.hpp	/^	std::vector<unsigned char> pixels;$/;"	m	struct:PNGImage	typeref:typename:std::vector<unsigned char>
+position	sceneGraph.hpp	/^  glm::vec3 position;$/;"	m	struct:SceneNode	typeref:typename:glm::vec3
+postProcessScanlines	utilities/lodepng.cpp	/^static unsigned postProcessScanlines(unsigned char* out, unsigned char* in,$/;"	f	typeref:typename:unsigned	file:
+preProcessScanlines	utilities/lodepng.cpp	/^static unsigned preProcessScanlines(unsigned char** out, size_t* outsize, const unsigned char* i/;"	f	typeref:typename:unsigned	file:
+predefined_filters	utilities/lodepng.h	/^  const unsigned char* predefined_filters;$/;"	m	struct:LodePNGEncoderSettings	typeref:typename:const unsigned char *
+previousKeyFrame	gamelogic.cpp	/^unsigned int previousKeyFrame = 0;$/;"	v	typeref:typename:unsigned int
+printGLError	program.hpp	/^inline void printGLError() {$/;"	f	typeref:typename:void
+printNode	sceneGraph.cpp	/^void printNode(SceneNode* node) {$/;"	f	typeref:typename:void
+readBitFromReversedStream	utilities/lodepng.cpp	/^static unsigned char readBitFromReversedStream(size_t* bitpointer, const unsigned char* bitstrea/;"	f	typeref:typename:unsigned char	file:
+readBits	utilities/lodepng.cpp	/^static unsigned readBits(LodePNGBitReader* reader, size_t nbits) {$/;"	f	typeref:typename:unsigned	file:
+readBitsFromReversedStream	utilities/lodepng.cpp	/^static unsigned readBitsFromReversedStream(size_t* bitpointer, const unsigned char* bitstream, s/;"	f	typeref:typename:unsigned	file:
+readChunk_PLTE	utilities/lodepng.cpp	/^static unsigned readChunk_PLTE(LodePNGColorMode* color, const unsigned char* data, size_t chunkL/;"	f	typeref:typename:unsigned	file:
+readChunk_bKGD	utilities/lodepng.cpp	/^static unsigned readChunk_bKGD(LodePNGInfo* info, const unsigned char* data, size_t chunkLength)/;"	f	typeref:typename:unsigned	file:
+readChunk_cHRM	utilities/lodepng.cpp	/^static unsigned readChunk_cHRM(LodePNGInfo* info, const unsigned char* data, size_t chunkLength)/;"	f	typeref:typename:unsigned	file:
+readChunk_gAMA	utilities/lodepng.cpp	/^static unsigned readChunk_gAMA(LodePNGInfo* info, const unsigned char* data, size_t chunkLength)/;"	f	typeref:typename:unsigned	file:
+readChunk_iCCP	utilities/lodepng.cpp	/^static unsigned readChunk_iCCP(LodePNGInfo* info, const LodePNGDecompressSettings* zlibsettings,$/;"	f	typeref:typename:unsigned	file:
+readChunk_iTXt	utilities/lodepng.cpp	/^static unsigned readChunk_iTXt(LodePNGInfo* info, const LodePNGDecompressSettings* zlibsettings,$/;"	f	typeref:typename:unsigned	file:
+readChunk_pHYs	utilities/lodepng.cpp	/^static unsigned readChunk_pHYs(LodePNGInfo* info, const unsigned char* data, size_t chunkLength)/;"	f	typeref:typename:unsigned	file:
+readChunk_sRGB	utilities/lodepng.cpp	/^static unsigned readChunk_sRGB(LodePNGInfo* info, const unsigned char* data, size_t chunkLength)/;"	f	typeref:typename:unsigned	file:
+readChunk_tEXt	utilities/lodepng.cpp	/^static unsigned readChunk_tEXt(LodePNGInfo* info, const unsigned char* data, size_t chunkLength)/;"	f	typeref:typename:unsigned	file:
+readChunk_tIME	utilities/lodepng.cpp	/^static unsigned readChunk_tIME(LodePNGInfo* info, const unsigned char* data, size_t chunkLength)/;"	f	typeref:typename:unsigned	file:
+readChunk_tRNS	utilities/lodepng.cpp	/^static unsigned readChunk_tRNS(LodePNGColorMode* color, const unsigned char* data, size_t chunkL/;"	f	typeref:typename:unsigned	file:
+readChunk_zTXt	utilities/lodepng.cpp	/^static unsigned readChunk_zTXt(LodePNGInfo* info, const LodePNGDecompressSettings* zlibsettings,$/;"	f	typeref:typename:unsigned	file:
+read_text_chunks	utilities/lodepng.h	/^  unsigned read_text_chunks; \/*if false but remember_unknown_chunks is true, they're stored in /;"	m	struct:LodePNGDecoderSettings	typeref:typename:unsigned
+referencePoint	sceneGraph.hpp	/^  glm::vec3 referencePoint;$/;"	m	struct:SceneNode	typeref:typename:glm::vec3
+remember_unknown_chunks	utilities/lodepng.h	/^  unsigned remember_unknown_chunks;$/;"	m	struct:LodePNGDecoderSettings	typeref:typename:unsigned
+removePaddingBits	utilities/lodepng.cpp	/^static void removePaddingBits(unsigned char* out, const unsigned char* in,$/;"	f	typeref:typename:void	file:
+renderFrame	gamelogic.cpp	/^void renderFrame(GLFWwindow* window) {$/;"	f	typeref:typename:void
+renderNode	gamelogic.cpp	/^void renderNode(SceneNode* node) {$/;"	f	typeref:typename:void
+resetMouse	utilities/camera.hpp	/^        GLboolean resetMouse     = true;$/;"	m	class:Gloom::Camera	typeref:typename:GLboolean
+reverseBits	utilities/lodepng.cpp	/^static unsigned reverseBits(unsigned bits, unsigned num) {$/;"	f	typeref:typename:unsigned	file:
+rgba16ToPixel	utilities/lodepng.cpp	/^static void rgba16ToPixel(unsigned char* out, size_t i,$/;"	f	typeref:typename:void	file:
+rgba8ToPixel	utilities/lodepng.cpp	/^static unsigned rgba8ToPixel(unsigned char* out, size_t i,$/;"	f	typeref:typename:unsigned	file:
+rightCornerLight	gamelogic.cpp	/^SceneNode* rightCornerLight;$/;"	v	typeref:typename:SceneNode *
+rootNode	gamelogic.cpp	/^SceneNode* rootNode;$/;"	v	typeref:typename:SceneNode *
+rotation	sceneGraph.hpp	/^  glm::vec3 rotation;$/;"	m	struct:SceneNode	typeref:typename:glm::vec3
+runProgram	program.cpp	/^void runProgram(GLFWwindow* window, CommandLineOptions options)$/;"	f	typeref:typename:void
+save_file	utilities/lodepng.cpp	/^unsigned save_file(const std::vector<unsigned char>& buffer, const std::string& filename) {$/;"	f	namespace:lodepng	typeref:typename:unsigned
+scale	sceneGraph.hpp	/^  glm::vec3 scale;$/;"	m	struct:SceneNode	typeref:typename:glm::vec3
+searchCodeIndex	utilities/lodepng.cpp	/^static size_t searchCodeIndex(const unsigned* array, size_t array_size, size_t value) {$/;"	f	typeref:typename:size_t	file:
+second	utilities/lodepng.h	/^  unsigned second;  \/*0-60 (to allow for leap seconds)*\/$/;"	m	struct:LodePNGTime	typeref:typename:unsigned
+setBitOfReversedStream	utilities/lodepng.cpp	/^static void setBitOfReversedStream(size_t* bitpointer, unsigned char* bitstream, unsigned char b/;"	f	typeref:typename:void	file:
+shader	gamelogic.cpp	/^Gloom::Shader* shader;$/;"	v	typeref:typename:Gloom::Shader *
+size	utilities/lodepng.cpp	/^  size_t size; \/*size in number of unsigned longs*\/$/;"	m	struct:uivector	typeref:typename:size_t	file:
+size	utilities/lodepng.cpp	/^  size_t size; \/*size of data in bytes*\/$/;"	m	struct:__anon1746e14a0208	typeref:typename:size_t	file:
+size	utilities/lodepng.cpp	/^  size_t size; \/*used size*\/$/;"	m	struct:ucvector	typeref:typename:size_t	file:
+sound	gamelogic.cpp	/^sf::Sound* sound;$/;"	v	typeref:typename:sf::Sound *
+srgb_defined	utilities/lodepng.h	/^  unsigned srgb_defined; \/* Whether an sRGB chunk is present (0 = not present, 1 = present). *\/$/;"	m	struct:LodePNGInfo	typeref:typename:unsigned
+srgb_intent	utilities/lodepng.h	/^  unsigned srgb_intent;  \/* Rendering intent: 0=perceptual, 1=rel. colorimetric, 2=saturation, /;"	m	struct:LodePNGInfo	typeref:typename:unsigned
+string_cleanup	utilities/lodepng.cpp	/^static void string_cleanup(char** out) {$/;"	f	typeref:typename:void	file:
+table_len	utilities/lodepng.cpp	/^  unsigned char* table_len; \/*length of symbol from lookup table, or max length if secondary lo/;"	m	struct:HuffmanTree	typeref:typename:unsigned char *	file:
+table_value	utilities/lodepng.cpp	/^  unsigned short* table_value; \/*value of symbol from lookup table, or pointer to secondary tab/;"	m	struct:HuffmanTree	typeref:typename:unsigned short *	file:
+tail	utilities/lodepng.cpp	/^  struct BPMNode* tail; \/*the next nodes in this chain (null if last)*\/$/;"	m	struct:BPMNode	typeref:struct:BPMNode *	file:
+text_compression	utilities/lodepng.h	/^  unsigned text_compression;$/;"	m	struct:LodePNGEncoderSettings	typeref:typename:unsigned
+text_keys	utilities/lodepng.h	/^  char** text_keys; \/*the keyword of a text chunk (e.g. "Comment")*\/$/;"	m	struct:LodePNGInfo	typeref:typename:char **
+text_num	utilities/lodepng.h	/^  size_t text_num; \/*the amount of texts in these char** buffers (there may be more texts in it/;"	m	struct:LodePNGInfo	typeref:typename:size_t
+text_strings	utilities/lodepng.h	/^  char** text_strings; \/*the actual text*\/$/;"	m	struct:LodePNGInfo	typeref:typename:char **
+textureCoordinates	utilities/mesh.h	/^    std::vector<glm::vec2> textureCoordinates;$/;"	m	struct:Mesh	typeref:typename:std::vector<glm::vec2>
+time	utilities/lodepng.h	/^  LodePNGTime time;$/;"	m	struct:LodePNGInfo	typeref:typename:LodePNGTime
+time_defined	utilities/lodepng.h	/^  unsigned time_defined; \/*set to 1 to make the encoder generate a tIME chunk*\/$/;"	m	struct:LodePNGInfo	typeref:typename:unsigned
+totalChildren	sceneGraph.cpp	/^int totalChildren(SceneNode* parent) {$/;"	f	typeref:typename:int
+totalElapsedTime	gamelogic.cpp	/^double totalElapsedTime = debug_startTime;$/;"	v	typeref:typename:double
+ucvector	utilities/lodepng.cpp	/^typedef struct ucvector {$/;"	s	file:
+ucvector	utilities/lodepng.cpp	/^} ucvector;$/;"	t	typeref:struct:ucvector	file:
+ucvector_cleanup	utilities/lodepng.cpp	/^static void ucvector_cleanup(void* p) {$/;"	f	typeref:typename:void	file:
+ucvector_init	utilities/lodepng.cpp	/^static void ucvector_init(ucvector* p) {$/;"	f	typeref:typename:void	file:
+ucvector_init_buffer	utilities/lodepng.cpp	/^static void ucvector_init_buffer(ucvector* p, unsigned char* buffer, size_t size) {$/;"	f	typeref:typename:void	file:
+ucvector_push_back	utilities/lodepng.cpp	/^static unsigned ucvector_push_back(ucvector* p, unsigned char c) {$/;"	f	typeref:typename:unsigned	file:
+ucvector_reserve	utilities/lodepng.cpp	/^static unsigned ucvector_reserve(ucvector* p, size_t allocsize) {$/;"	f	typeref:typename:unsigned	file:
+ucvector_resize	utilities/lodepng.cpp	/^static unsigned ucvector_resize(ucvector* p, size_t size) {$/;"	f	typeref:typename:unsigned	file:
+uivector	utilities/lodepng.cpp	/^typedef struct uivector {$/;"	s	file:
+uivector	utilities/lodepng.cpp	/^} uivector;$/;"	t	typeref:struct:uivector	file:
+uivector_cleanup	utilities/lodepng.cpp	/^static void uivector_cleanup(void* p) {$/;"	f	typeref:typename:void	file:
+uivector_init	utilities/lodepng.cpp	/^static void uivector_init(uivector* p) {$/;"	f	typeref:typename:void	file:
+uivector_push_back	utilities/lodepng.cpp	/^static unsigned uivector_push_back(uivector* p, unsigned c) {$/;"	f	typeref:typename:unsigned	file:
+uivector_reserve	utilities/lodepng.cpp	/^static unsigned uivector_reserve(uivector* p, size_t allocsize) {$/;"	f	typeref:typename:unsigned	file:
+uivector_resize	utilities/lodepng.cpp	/^static unsigned uivector_resize(uivector* p, size_t size) {$/;"	f	typeref:typename:unsigned	file:
+uivector_resizev	utilities/lodepng.cpp	/^static unsigned uivector_resizev(uivector* p, size_t size, unsigned value) {$/;"	f	typeref:typename:unsigned	file:
+unfilter	utilities/lodepng.cpp	/^static unsigned unfilter(unsigned char* out, const unsigned char* in, unsigned w, unsigned h, un/;"	f	typeref:typename:unsigned	file:
+unfilterScanline	utilities/lodepng.cpp	/^static unsigned unfilterScanline(unsigned char* recon, const unsigned char* scanline, const unsi/;"	f	typeref:typename:unsigned	file:
+unknown_chunks_data	utilities/lodepng.h	/^  unsigned char* unknown_chunks_data[3];$/;"	m	struct:LodePNGInfo	typeref:typename:unsigned char * [3]
+unknown_chunks_size	utilities/lodepng.h	/^  size_t unknown_chunks_size[3]; \/*size in bytes of the unknown chunks, given for protection*\/$/;"	m	struct:LodePNGInfo	typeref:typename:size_t[3]
+updateCamera	utilities/camera.hpp	/^        void updateCamera(GLfloat deltaTime)$/;"	f	class:Gloom::Camera	typeref:typename:void
+updateFrame	gamelogic.cpp	/^void updateFrame(GLFWwindow* window) {$/;"	f	typeref:typename:void
+updateHashChain	utilities/lodepng.cpp	/^static void updateHashChain(Hash* hash, size_t wpos, unsigned hashval, unsigned short numzeros) /;"	f	typeref:typename:void	file:
+updateNodeTransformations	gamelogic.cpp	/^void updateNodeTransformations(SceneNode* node, glm::mat4 transformationThusFar) {$/;"	f	typeref:typename:void
+updateViewMatrix	utilities/camera.hpp	/^        void updateViewMatrix()$/;"	f	class:Gloom::Camera	typeref:typename:void
+update_adler32	utilities/lodepng.cpp	/^static unsigned update_adler32(unsigned adler, const unsigned char* data, unsigned len) {$/;"	f	typeref:typename:unsigned	file:
+use_lz77	utilities/lodepng.h	/^  unsigned use_lz77; \/*whether or not to use LZ77. Should be 1 for proper compression.*\/$/;"	m	struct:LodePNGCompressSettings	typeref:typename:unsigned
+val	utilities/lodepng.cpp	/^  int* val; \/*circular pos to hash value*\/$/;"	m	struct:Hash	typeref:typename:int *	file:
+vertexArrayObjectID	sceneGraph.hpp	/^  int vertexArrayObjectID;$/;"	m	struct:SceneNode	typeref:typename:int
+vertices	utilities/mesh.h	/^    std::vector<glm::vec3> vertices;$/;"	m	struct:Mesh	typeref:typename:std::vector<glm::vec3>
+weight	utilities/lodepng.cpp	/^  int weight; \/*the sum of all weights in this chain*\/$/;"	m	struct:BPMNode	typeref:typename:int	file:
+width	utilities/imageLoader.hpp	/^	unsigned int width, height;$/;"	m	struct:PNGImage	typeref:typename:unsigned int
+windowHeight	utilities/window.hpp	/^const int         windowHeight    = 768;$/;"	v	typeref:typename:const int
+windowResizable	utilities/window.hpp	/^const GLint       windowResizable = GL_FALSE;$/;"	v	typeref:typename:const GLint
+windowSamples	utilities/window.hpp	/^const int         windowSamples   = 4;$/;"	v	typeref:typename:const int
+windowTitle	utilities/window.hpp	/^const std::string windowTitle     = "Glowbox";$/;"	v	typeref:typename:const std::string
+windowWidth	utilities/window.hpp	/^const int         windowWidth     = 1366;$/;"	v	typeref:typename:const int
+windowsize	utilities/lodepng.h	/^  unsigned windowsize; \/*must be a power of two <= 32768. higher compresses more but is slower./;"	m	struct:LodePNGCompressSettings	typeref:typename:unsigned
+writeBits	utilities/lodepng.cpp	/^static void writeBits(LodePNGBitWriter* writer, unsigned value, size_t nbits) {$/;"	f	typeref:typename:void	file:
+writeBitsReversed	utilities/lodepng.cpp	/^static void writeBitsReversed(LodePNGBitWriter* writer, unsigned value, size_t nbits) {$/;"	f	typeref:typename:void	file:
+writeLZ77data	utilities/lodepng.cpp	/^static void writeLZ77data(LodePNGBitWriter* writer, const uivector* lz77_encoded,$/;"	f	typeref:typename:void	file:
+writeSignature	utilities/lodepng.cpp	/^static void writeSignature(ucvector* out) {$/;"	f	typeref:typename:void	file:
+year	utilities/lodepng.h	/^  unsigned year;    \/*2 bytes used (0-65535)*\/$/;"	m	struct:LodePNGTime	typeref:typename:unsigned
+zeros	utilities/lodepng.cpp	/^  unsigned short* zeros; \/*length of zeros streak, used as a second hash chain*\/$/;"	m	struct:Hash	typeref:typename:unsigned short *	file:
+zlib_compress	utilities/lodepng.cpp	/^static unsigned zlib_compress(unsigned char** out, size_t* outsize, const unsigned char* in,$/;"	f	typeref:typename:unsigned	file:
+zlib_decompress	utilities/lodepng.cpp	/^static unsigned zlib_decompress(unsigned char** out, size_t* outsize, const unsigned char* in,$/;"	f	typeref:typename:unsigned	file:
+zlibsettings	utilities/lodepng.h	/^  LodePNGCompressSettings zlibsettings; \/*settings for the zlib encoder, such as window size, ./;"	m	struct:LodePNGEncoderSettings	typeref:typename:LodePNGCompressSettings
+zlibsettings	utilities/lodepng.h	/^  LodePNGDecompressSettings zlibsettings; \/*in here is the setting to ignore Adler32 checksums*/;"	m	struct:LodePNGDecoderSettings	typeref:typename:LodePNGDecompressSettings
+~State	utilities/lodepng.cpp	/^State::~State() {$/;"	f	class:lodepng::State
