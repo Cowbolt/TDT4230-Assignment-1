@@ -98,7 +98,7 @@ void mouseCallback(GLFWwindow* window, double x, double y) {
 // LightSource lightSources[/*Put number of light sources you want here*/];
 SceneNode* leftCornerLight;
 SceneNode* rightCornerLight;
-SceneNode* padLight;
+SceneNode* ballLight;
 
 void initGame(GLFWwindow* window, CommandLineOptions gameOptions) {
     buffer = new sf::SoundBuffer();
@@ -158,11 +158,11 @@ void initGame(GLFWwindow* window, CommandLineOptions gameOptions) {
     rightCornerLight->id = 1;
     rootNode->children.push_back(rightCornerLight);
 
-    padLight = createSceneNode();
-    padLight->nodeType = POINT_LIGHT;
-    padLight->position = glm::vec3(0,2,0);
-    padLight->id = 2;
-    ballNode->children.push_back(padLight);
+    ballLight = createSceneNode();
+    ballLight->nodeType = POINT_LIGHT;
+    ballLight->position = glm::vec3(0,10,0);
+    ballLight->id = 2;
+    ballNode->children.push_back(ballLight);
 
     getTimeDeltaSeconds();
 
@@ -329,7 +329,7 @@ void updateFrame(GLFWwindow* window) {
     glm::mat4 projection = glm::perspective(glm::radians(80.0f), float(windowWidth) / float(windowHeight), 0.1f, 350.f);
 
     glm::vec3 cameraPosition = glm::vec3(0, 2, -20);
-    glUniformMatrix4fv(6, 1, GL_FALSE, glm::value_ptr(cameraPosition));
+    glUniform3fv(6, 1, glm::value_ptr(cameraPosition));
 
     // Some math to make the camera move in a nice way
     float lookRotation = -0.6 / (1 + exp(-5 * (padPositionX-0.5))) + 0.3;
@@ -344,6 +344,7 @@ void updateFrame(GLFWwindow* window) {
     // Move and rotate various SceneNodes
     boxNode->position = { 0, -10, -80 };
 
+    glUniform3fv(7, 1, glm::value_ptr(ballPosition));
     ballNode->position = ballPosition;
     ballNode->scale = glm::vec3(ballRadius);
     ballNode->rotation = { 0, totalElapsedTime*2, 0 };
@@ -376,9 +377,9 @@ void updateNodeTransformations(SceneNode* node, glm::mat4 transformationThusFar,
         case GEOMETRY: break;
         case POINT_LIGHT: {
                             switch(node->id) {
-                              case 0: glUniform4fv(7, 1, glm::value_ptr(node->modelMatrix*glm::vec4(0,0,0,1))); break;
-                              case 1: glUniform4fv(8, 1, glm::value_ptr(node->modelMatrix*glm::vec4(0,0,0,1))); break;
-                              case 2: glUniform4fv(9, 1, glm::value_ptr(node->modelMatrix*glm::vec4(0,0,0,1))); break;
+                              case 0: glUniform4fv(8, 1, glm::value_ptr(node->modelMatrix*glm::vec4(0,0,0,1))); break;
+                              case 1: glUniform4fv(9, 1, glm::value_ptr(node->modelMatrix*glm::vec4(0,0,0,1))); break;
+                              case 2: glUniform4fv(10, 1, glm::value_ptr(node->modelMatrix*glm::vec4(0,0,0,1))); break;
                             }
                             // glUniform4fv(6, 1, glm::value_ptr(node->modelMatrix*glm::vec4(0,0,0,1)));
                             // std::cout<<glm::to_string(node->currentTransformationMatrix*glm::vec4(0,0,0,1))<<std::endl;
