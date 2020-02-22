@@ -18,6 +18,10 @@
 #define GLM_ENABLE_EXPERIMENTAL
 #include <glm/gtx/transform.hpp>
 
+
+#include "glm/ext.hpp"
+
+
 enum KeyFrameAction {
     BOTTOM, TOP
 };
@@ -143,19 +147,22 @@ void initGame(GLFWwindow* window, CommandLineOptions gameOptions) {
 
     // Lights
     leftCornerLight = createSceneNode();
+    leftCornerLight->position = glm::vec3(-30,90,-30);
     leftCornerLight->nodeType = POINT_LIGHT;
-    leftCornerLight->vertexArrayObjectID = 0;
+    leftCornerLight->id = 0;
     rootNode->children.push_back(leftCornerLight);
 
     rightCornerLight = createSceneNode();
+    rightCornerLight->position = glm::vec3(10,30,0.5);
     rightCornerLight->nodeType = POINT_LIGHT;
-    rightCornerLight->vertexArrayObjectID = 1;
+    rightCornerLight->id = 1;
     rootNode->children.push_back(rightCornerLight);
 
     padLight = createSceneNode();
     padLight->nodeType = POINT_LIGHT;
-    padLight->vertexArrayObjectID = 2;
-    padNode->children.push_back(padLight);
+    padLight->position = glm::vec3(0,2,0);
+    padLight->id = 2;
+    ballNode->children.push_back(padLight);
 
     getTimeDeltaSeconds();
 
@@ -322,6 +329,7 @@ void updateFrame(GLFWwindow* window) {
     glm::mat4 projection = glm::perspective(glm::radians(80.0f), float(windowWidth) / float(windowHeight), 0.1f, 350.f);
 
     glm::vec3 cameraPosition = glm::vec3(0, 2, -20);
+    glUniformMatrix4fv(6, 1, GL_FALSE, glm::value_ptr(cameraPosition));
 
     // Some math to make the camera move in a nice way
     float lookRotation = -0.6 / (1 + exp(-5 * (padPositionX-0.5))) + 0.3;
@@ -359,36 +367,44 @@ void updateNodeTransformations(SceneNode* node, glm::mat4 transformationThusFar,
             * glm::scale(node->scale)
             * glm::translate(-node->referencePoint);
 
-    node->modelMatrix = transformationMatrix*modelMatrix;
+    // node->modelMatrix = transformationMatrix*modelMatrix;
+    node->modelMatrix = modelMatrix*transformationMatrix;
     node->currentTransformationMatrix = transformationThusFar * transformationMatrix;
 
 
     switch(node->nodeType) {
         case GEOMETRY: break;
-        case POINT_LIGHT: break;
+        case POINT_LIGHT: {
+                            switch(node->id) {
+                              case 0: glUniform4fv(7, 1, glm::value_ptr(node->modelMatrix*glm::vec4(0,0,0,1))); break;
+                              case 1: glUniform4fv(8, 1, glm::value_ptr(node->modelMatrix*glm::vec4(0,0,0,1))); break;
+                              case 2: glUniform4fv(9, 1, glm::value_ptr(node->modelMatrix*glm::vec4(0,0,0,1))); break;
+                            }
+                            // glUniform4fv(6, 1, glm::value_ptr(node->modelMatrix*glm::vec4(0,0,0,1)));
+                            // std::cout<<glm::to_string(node->currentTransformationMatrix*glm::vec4(0,0,0,1))<<std::endl;
+                          }
         case SPOT_LIGHT: break;
     }
 
     for(SceneNode* child : node->children) {
-        updateNodeTransformations(child, node->currentTransformationMatrix, transformationMatrix);
+        updateNodeTransformations(child, node->currentTransformationMatrix, node->modelMatrix);
     }
 }
 
 void renderNode(SceneNode* node) {
     glUniformMatrix4fv(4, 1, GL_FALSE, glm::value_ptr(node->modelMatrix));
 
-    // Normal matrix, 3x3 of inverse of transpose of model matrix
-    glUniformMatrix3fv(6, 1, GL_FALSE,
-        glm::value_ptr(glm::mat3(glm::inverse(glm::transpose(node->modelMatrix)))));
+    // Normal matrix, 3x3 of transpose of inverse of model matrix
+    glUniformMatrix3fv(5, 1, GL_FALSE,
+        glm::value_ptr(glm::mat3(glm::transpose(glm::inverse(node->modelMatrix)))));
 
     switch(node->nodeType) {
         case GEOMETRY:
             if(node->vertexArrayObjectID != -1) {
                 glBindVertexArray(node->vertexArrayObjectID);
                 glDrawElements(GL_TRIANGLES, node->VAOIndexCount, GL_UNSIGNED_INT, nullptr);
-            }
-            break;
-        case POINT_LIGHT: glUniform4fv(5, 1, glm::value_ptr(node->currentTransformationMatrix*glm::vec4(0,0,0,1)));
+            };
+        case POINT_LIGHT: break;
         case SPOT_LIGHT: break;
     }
 

@@ -45,6 +45,7 @@ struct SceneNode {
 
   // Separate matrix in modelspace for calculating lighting angles
   glm::mat4 modelMatrix;
+  int id;
 
   // The location of the node's reference point
   glm::vec3 referencePoint;
