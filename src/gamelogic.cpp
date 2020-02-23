@@ -147,13 +147,15 @@ void initGame(GLFWwindow* window, CommandLineOptions gameOptions) {
 
     // Lights
     leftCornerLight = createSceneNode();
-    leftCornerLight->position = glm::vec3(-30,90,-30);
+    leftCornerLight->position = glm::vec3(50,15,-100);
+    leftCornerLight->color = glm::vec3(1,0,0);
     leftCornerLight->nodeType = POINT_LIGHT;
     leftCornerLight->id = 0;
     rootNode->children.push_back(leftCornerLight);
 
     rightCornerLight = createSceneNode();
-    rightCornerLight->position = glm::vec3(10,30,0.5);
+    rightCornerLight->position = glm::vec3(-50,15,-100);
+    rightCornerLight->color = glm::vec3(0,1,0);
     rightCornerLight->nodeType = POINT_LIGHT;
     rightCornerLight->id = 1;
     rootNode->children.push_back(rightCornerLight);
@@ -161,8 +163,9 @@ void initGame(GLFWwindow* window, CommandLineOptions gameOptions) {
     ballLight = createSceneNode();
     ballLight->nodeType = POINT_LIGHT;
     ballLight->position = glm::vec3(0,10,0);
+    ballLight->color = glm::vec3(0,0,1);
     ballLight->id = 2;
-    ballNode->children.push_back(ballLight);
+    rootNode->children.push_back(ballLight);
 
     getTimeDeltaSeconds();
 
@@ -355,6 +358,10 @@ void updateFrame(GLFWwindow* window) {
         boxNode->position.z - (boxDimensions.z/2) + (padDimensions.z/2) + (1 - padPositionZ) * (boxDimensions.z - padDimensions.z)
     };
 
+    leftCornerLight->position = glm::vec3(5,20,0) + ballPosition;
+    rightCornerLight->position = glm::vec3(-5,20,0) + ballPosition; 
+    ballLight->position = glm::vec3(0,20,0) + ballPosition;
+
     updateNodeTransformations(rootNode, VP);
 }
 
@@ -368,7 +375,6 @@ void updateNodeTransformations(SceneNode* node, glm::mat4 transformationThusFar,
             * glm::scale(node->scale)
             * glm::translate(-node->referencePoint);
 
-    // node->modelMatrix = transformationMatrix*modelMatrix;
     node->modelMatrix = modelMatrix*transformationMatrix;
     node->currentTransformationMatrix = transformationThusFar * transformationMatrix;
 
@@ -376,13 +382,11 @@ void updateNodeTransformations(SceneNode* node, glm::mat4 transformationThusFar,
     switch(node->nodeType) {
         case GEOMETRY: break;
         case POINT_LIGHT: {
-                            switch(node->id) {
-                              case 0: glUniform4fv(8, 1, glm::value_ptr(node->modelMatrix*glm::vec4(0,0,0,1))); break;
-                              case 1: glUniform4fv(9, 1, glm::value_ptr(node->modelMatrix*glm::vec4(0,0,0,1))); break;
-                              case 2: glUniform4fv(10, 1, glm::value_ptr(node->modelMatrix*glm::vec4(0,0,0,1))); break;
-                            }
-                            // glUniform4fv(6, 1, glm::value_ptr(node->modelMatrix*glm::vec4(0,0,0,1)));
-                            // std::cout<<glm::to_string(node->currentTransformationMatrix*glm::vec4(0,0,0,1))<<std::endl;
+                            glUniform3fv(shader->getUniformFromName(fmt::format("lightArray[{}].position", node->id)),
+                                1, glm::value_ptr(glm::vec3(node->modelMatrix*glm::vec4(0,0,0,1))));
+                            glUniform3fv(shader->getUniformFromName(fmt::format("lightArray[{}].color", node->id)),
+                                1, glm::value_ptr(node->color));
+                            break;
                           }
         case SPOT_LIGHT: break;
     }
