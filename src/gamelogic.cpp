@@ -18,9 +18,8 @@
 #define GLM_ENABLE_EXPERIMENTAL
 #include <glm/gtx/transform.hpp>
 
-
-#include "glm/ext.hpp"
-
+#include "utilities/imageLoader.hpp"
+#include "utilities/glfont.h"
 
 enum KeyFrameAction {
     BOTTOM, TOP
