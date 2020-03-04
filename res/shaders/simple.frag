@@ -13,9 +13,6 @@ in layout(location = 2) vec4 position;
 
 uniform layout(location = 6) vec3 camera_pos;
 uniform layout(location = 7) vec3 ball_pos;
-uniform layout(location = 8) vec4 light0_pos;
-uniform layout(location = 9) vec4 light1_pos;
-uniform layout(location = 10) vec4 light2_pos;
 
 out vec4 color;
 
@@ -37,7 +34,7 @@ void main()
   {
     vec3 vec = lightArray[i].position - position.xyz;
       float dist = distance(lightArray[i].position, position.xyz);
-      float L = 1/(0.002+dist*0.001+pow(dist,2)*0.004);
+      float L = 1/(1.000+dist*0.010+pow(dist,2)*0.0005);
       vec3 dir = normalize(vec);
       vec3 ref = reflect(-dir, normalize(normal));
 
@@ -56,5 +53,5 @@ void main()
     }
   }
 
-  color = vec4(vec3(dither(textureCoordinates) + ambient + light), 1);
+  color = vec4(vec3(dither(textureCoordinates) + ambient + 2*light), 1);
 }

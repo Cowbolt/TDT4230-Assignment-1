@@ -14,7 +14,7 @@
 #include <fstream>
 
 enum SceneNodeType {
-  GEOMETRY, POINT_LIGHT, SPOT_LIGHT
+  GEOMETRY, POINT_LIGHT, SPOT_LIGHT, TEXT_GEOMETRY, MAPPED_GEOMETRY
 };
 
 struct SceneNode {
@@ -47,6 +47,10 @@ struct SceneNode {
   glm::mat4 modelMatrix;
   int id;
   glm::vec3 color;
+
+  // Texture information
+  int texID;
+  int normalID;
 
   // The location of the node's reference point
   glm::vec3 referencePoint;

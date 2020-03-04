@@ -17,15 +17,20 @@
 #include "sceneGraph.hpp"
 #define GLM_ENABLE_EXPERIMENTAL
 #include <glm/gtx/transform.hpp>
-
+#include "glm/ext.hpp"
 #include "utilities/imageLoader.hpp"
 #include "utilities/glfont.h"
+#include "program.hpp"
 
 enum KeyFrameAction {
     BOTTOM, TOP
 };
 
 #include <timestamps.h>
+
+float zNear = 0.1f;
+float zFar = 350.f;
+glm::mat4 ortho = glm::ortho(0.f, (float)windowWidth, 0.f, (float)windowHeight);
 
 double padPositionX = 0;
 double padPositionZ = 0;
@@ -37,12 +42,15 @@ SceneNode* rootNode;
 SceneNode* boxNode;
 SceneNode* ballNode;
 SceneNode* padNode;
+SceneNode* textNode;
 
 double ballRadius = 3.0f;
+int score = 0;
 
 // These are heap allocated, because they should not be initialised at the start of the program
 sf::SoundBuffer* buffer;
 Gloom::Shader* shader;
+Gloom::Shader* shader2D;
 sf::Sound* sound;
 
 const glm::vec3 boxDimensions(180, 90, 90);
@@ -110,6 +118,9 @@ void initGame(GLFWwindow* window, CommandLineOptions gameOptions) {
     glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_HIDDEN);
     glfwSetCursorPosCallback(window, mouseCallback);
 
+    shader2D = new Gloom::Shader();
+    shader2D->makeBasicShader("../res/shaders/2d.vert", "../res/shaders/2d.frag");
+
     shader = new Gloom::Shader();
     shader->makeBasicShader("../res/shaders/simple.vert", "../res/shaders/simple.frag");
     shader->activate();
@@ -166,11 +177,27 @@ void initGame(GLFWwindow* window, CommandLineOptions gameOptions) {
     ballLight->id = 2;
     rootNode->children.push_back(ballLight);
 
+    // Text
+    textNode = createSceneNode();
+    textNode->position = glm::vec3(0,1080-40,0);
+    textNode->nodeType = TEXT_GEOMETRY;
+    updateScoreText();
+    rootNode->children.push_back(textNode);
+
+
     getTimeDeltaSeconds();
 
     std::cout << fmt::format("Initialized scene with {} SceneNodes.", totalChildren(rootNode)) << std::endl;
 
     std::cout << "Ready. Click to start!" << std::endl;
+}
+
+// FIXME: Game stutters everytime score goes up because everything is generated over again
+void updateScoreText()
+{
+  Mesh textMesh = setupTextbuffer(fmt::format("Score: {}", score));
+  textNode->vertexArrayObjectID = generateBuffer(textMesh);
+  textNode->VAOIndexCount = textMesh.indices.size();
 }
 
 void updateFrame(GLFWwindow* window) {
@@ -319,16 +346,21 @@ void updateFrame(GLFWwindow* window) {
                     || ballPosition.z < padFrontZ
                     || ballPosition.z > padBackZ) {
                     hasLost = true;
+                    score = 0;
+                    updateScoreText();
                     if (options.enableMusic) {
                         sound->stop();
                         delete sound;
                     }
+                } else {
+                  score++;
+                  updateScoreText();
                 }
             }
         }
     }
 
-    glm::mat4 projection = glm::perspective(glm::radians(80.0f), float(windowWidth) / float(windowHeight), 0.1f, 350.f);
+    glm::mat4 projection = glm::perspective(glm::radians(80.0f), float(windowWidth) / float(windowHeight), zNear, zFar);
 
     glm::vec3 cameraPosition = glm::vec3(0, 2, -20);
     glUniform3fv(6, 1, glm::value_ptr(cameraPosition));
@@ -423,4 +455,42 @@ void renderFrame(GLFWwindow* window) {
     glViewport(0, 0, windowWidth, windowHeight);
 
     renderNode(rootNode);
+    renderText(textNode);
+}
+
+unsigned int genTexture(PNGImage img)
+{
+  unsigned int texID;
+  glGenTextures(1, &texID);
+  glBindTexture(GL_TEXTURE_2D, texID);
+  printGLError();
+  glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, img.width, img.height, 0,
+      GL_RGBA, GL_UNSIGNED_BYTE, img.pixels.data());
+
+  glGenerateMipmap(GL_TEXTURE_2D);
+  // Enable mipmap interpolation and Bilinear interpolation when undersampling texture
+  glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
+  // Enable Linear interpolation when oversampling texture
+  glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+  return texID;
+
+}
+
+Mesh setupTextbuffer(std::string text)
+{
+  PNGImage charmap = loadPNGFile("../res/textures/charmap.png");
+  textNode->texID = genTexture(charmap);
+  return generateTextGeometryBuffer(text, 39.f/29.f, 29.f*text.length());
+}
+
+void renderText(SceneNode* node)
+{
+  shader2D->activate();
+  glUniformMatrix4fv(3, 1, GL_FALSE, glm::value_ptr(ortho));
+  glUniform3fv(4, 1, glm::value_ptr(node->position));
+  glBindVertexArray(node->vertexArrayObjectID);
+  glBindTextureUnit(0, node->texID);
+  glDrawElements(GL_TRIANGLES, node->VAOIndexCount, GL_UNSIGNED_INT, nullptr);
+  // Rebind standard shader after having drawn geometry
+  shader->activate();
 }
