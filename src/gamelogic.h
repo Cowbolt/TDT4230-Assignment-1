@@ -13,4 +13,4 @@ unsigned int genTexture(PNGImage img);
 Mesh setupTextbuffer(std::string text);
 void renderText(SceneNode* textNode);
 void updateScoreText();
-void loadDiffuseAndNormalTexture(SceneNode* node);
+void loadWallTextures(SceneNode* node);

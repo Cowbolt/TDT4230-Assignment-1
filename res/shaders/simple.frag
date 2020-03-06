@@ -18,12 +18,13 @@ uniform layout(location = 8) uint normal_flag;
 
 layout(binding = 0) uniform sampler2D textureSampler;
 layout(binding = 1) uniform sampler2D normalSampler;
+layout(binding = 2) uniform sampler2D roughSampler;
 
 out vec4 color;
 
 vec3 surf_eye = normalize(camera_pos - position.xyz);
 vec3 ball_vec = ball_pos - position.xyz;
-int spec = 32;
+float spec = 32;
 float ambient = 0.1;
 vec3 normal = vert_normal;
 vec4 texModifier = vec4(1);
@@ -40,6 +41,7 @@ void main()
   {
     texModifier = texture(textureSampler, textureCoordinates);
     normal = TBN_matrix * (texture(normalSampler, textureCoordinates).xyz * 2 - 1);
+    spec = 5/pow(length(texture(roughSampler, textureCoordinates)), 2);
   }
 
   for (int i = 0; i < 3; i++)
@@ -65,9 +67,4 @@ void main()
     }
   }
   color = texModifier * vec4(vec3(dither(textureCoordinates) + ambient + 2*light), 1);
-
-  // if (normal_flag == 1)
-  // {
-  //   color = vec4(normal, 1);
-  // }
 }

@@ -149,7 +149,7 @@ void initGame(GLFWwindow* window, CommandLineOptions gameOptions) {
     boxNode->vertexArrayObjectID = boxVAO;
     boxNode->nodeType = MAPPED_GEOMETRY;
     boxNode->VAOIndexCount = box.indices.size();
-    loadDiffuseAndNormalTexture(boxNode);
+    loadWallTextures(boxNode);
 
     padNode->vertexArrayObjectID = padVAO;
     padNode->VAOIndexCount = pad.indices.size();
@@ -447,6 +447,7 @@ void renderNode(SceneNode* node) {
             glBindVertexArray(node->vertexArrayObjectID);
             glBindTextureUnit(0, node->texID);
             glBindTextureUnit(1, node->normalID);
+            glBindTextureUnit(2, node->roughID);
             glDrawElements(GL_TRIANGLES, node->VAOIndexCount, GL_UNSIGNED_INT, nullptr);
             glUniform1ui(8,0);
             break;
@@ -487,12 +488,14 @@ unsigned int genTexture(PNGImage img)
 
 }
 
-void loadDiffuseAndNormalTexture(SceneNode* node)
+void loadWallTextures(SceneNode* node)
 {
   PNGImage diffuse = loadPNGFile("../res/textures/Brick03_col.png");
   PNGImage normal = loadPNGFile("../res/textures/Brick03_nrm.png");
+  PNGImage rough = loadPNGFile("../res/textures/Brick03_rgh.png");
   node->texID = genTexture(diffuse);
   node->normalID = genTexture(normal);
+  node->roughID = genTexture(rough);
 }
 
 Mesh setupTextbuffer(std::string text)

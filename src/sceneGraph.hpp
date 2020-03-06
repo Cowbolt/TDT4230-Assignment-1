@@ -51,6 +51,7 @@ struct SceneNode {
   // Texture information
   int texID;
   int normalID;
+  int roughID;
 
   // The location of the node's reference point
   glm::vec3 referencePoint;
