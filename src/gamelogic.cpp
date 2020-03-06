@@ -147,7 +147,9 @@ void initGame(GLFWwindow* window, CommandLineOptions gameOptions) {
     rootNode->children.push_back(ballNode);
 
     boxNode->vertexArrayObjectID = boxVAO;
+    boxNode->nodeType = MAPPED_GEOMETRY;
     boxNode->VAOIndexCount = box.indices.size();
+    loadDiffuseAndNormalTexture(boxNode);
 
     padNode->vertexArrayObjectID = padVAO;
     padNode->VAOIndexCount = pad.indices.size();
@@ -156,24 +158,24 @@ void initGame(GLFWwindow* window, CommandLineOptions gameOptions) {
     ballNode->VAOIndexCount = sphere.indices.size();
 
     // Lights
-    leftCornerLight = createSceneNode();
-    leftCornerLight->position = glm::vec3(50,15,-100);
-    leftCornerLight->color = glm::vec3(1,0,0);
-    leftCornerLight->nodeType = POINT_LIGHT;
-    leftCornerLight->id = 0;
-    rootNode->children.push_back(leftCornerLight);
+    // leftCornerLight = createSceneNode();
+    // leftCornerLight->position = glm::vec3(50,15,-100);
+    // leftCornerLight->color = glm::vec3(1,0,0);
+    // leftCornerLight->nodeType = POINT_LIGHT;
+    // leftCornerLight->id = 0;
+    // rootNode->children.push_back(leftCornerLight);
 
-    rightCornerLight = createSceneNode();
-    rightCornerLight->position = glm::vec3(-50,15,-100);
-    rightCornerLight->color = glm::vec3(0,1,0);
-    rightCornerLight->nodeType = POINT_LIGHT;
-    rightCornerLight->id = 1;
-    rootNode->children.push_back(rightCornerLight);
+    // rightCornerLight = createSceneNode();
+    // rightCornerLight->position = glm::vec3(-50,15,-100);
+    // rightCornerLight->color = glm::vec3(0,1,0);
+    // rightCornerLight->nodeType = POINT_LIGHT;
+    // rightCornerLight->id = 1;
+    // rootNode->children.push_back(rightCornerLight);
 
     ballLight = createSceneNode();
     ballLight->nodeType = POINT_LIGHT;
     ballLight->position = glm::vec3(0,10,0);
-    ballLight->color = glm::vec3(0,0,1);
+    ballLight->color = glm::vec3(1,1,1);
     ballLight->id = 2;
     rootNode->children.push_back(ballLight);
 
@@ -389,8 +391,8 @@ void updateFrame(GLFWwindow* window) {
         boxNode->position.z - (boxDimensions.z/2) + (padDimensions.z/2) + (1 - padPositionZ) * (boxDimensions.z - padDimensions.z)
     };
 
-    leftCornerLight->position = glm::vec3(5,20,0) + ballPosition;
-    rightCornerLight->position = glm::vec3(-5,20,0) + ballPosition; 
+    // leftCornerLight->position = glm::vec3(5,20,0) + ballPosition;
+    // rightCornerLight->position = glm::vec3(-5,20,0) + ballPosition; 
     ballLight->position = glm::vec3(0,20,0) + ballPosition;
 
     updateNodeTransformations(rootNode, VP);
@@ -439,7 +441,16 @@ void renderNode(SceneNode* node) {
             if(node->vertexArrayObjectID != -1) {
                 glBindVertexArray(node->vertexArrayObjectID);
                 glDrawElements(GL_TRIANGLES, node->VAOIndexCount, GL_UNSIGNED_INT, nullptr);
-            };
+            }; break;
+        case MAPPED_GEOMETRY:
+            glUniform1ui(8,1);
+            glBindVertexArray(node->vertexArrayObjectID);
+            glBindTextureUnit(0, node->texID);
+            glBindTextureUnit(1, node->normalID);
+            glDrawElements(GL_TRIANGLES, node->VAOIndexCount, GL_UNSIGNED_INT, nullptr);
+            glUniform1ui(8,0);
+            break;
+
         case POINT_LIGHT: break;
         case SPOT_LIGHT: break;
     }
@@ -474,6 +485,14 @@ unsigned int genTexture(PNGImage img)
   glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
   return texID;
 
+}
+
+void loadDiffuseAndNormalTexture(SceneNode* node)
+{
+  PNGImage diffuse = loadPNGFile("../res/textures/Brick03_col.png");
+  PNGImage normal = loadPNGFile("../res/textures/Brick03_nrm.png");
+  node->texID = genTexture(diffuse);
+  node->normalID = genTexture(normal);
 }
 
 Mesh setupTextbuffer(std::string text)

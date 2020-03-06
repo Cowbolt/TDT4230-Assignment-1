@@ -9,5 +9,4 @@ out vec4 color;
 void main()
 {
   color = texture(textSampler, textureCoordinates);
-  // color = vec4(textureCoordinates, 0, 1);
 }

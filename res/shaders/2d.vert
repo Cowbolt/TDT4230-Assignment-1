@@ -14,5 +14,4 @@ void main()
     normal_out = normalize(normal_in);
     textureCoordinates_out = textureCoordinates_in;
     gl_Position = orthographic_matrix * vec4(node_position + position, 1.0f) ;
-    // gl_Position = vec4(position, 1.0f) ;
 }

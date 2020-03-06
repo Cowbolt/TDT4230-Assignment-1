@@ -7,12 +7,17 @@ struct Light {
 
 uniform Light lightArray[3];
 
-in layout(location = 0) vec3 normal;
+in layout(location = 0) vec3 vert_normal;
 in layout(location = 1) vec2 textureCoordinates;
 in layout(location = 2) vec4 position;
+in layout(location = 3) mat3 TBN_matrix;
 
 uniform layout(location = 6) vec3 camera_pos;
 uniform layout(location = 7) vec3 ball_pos;
+uniform layout(location = 8) uint normal_flag;
+
+layout(binding = 0) uniform sampler2D textureSampler;
+layout(binding = 1) uniform sampler2D normalSampler;
 
 out vec4 color;
 
@@ -20,6 +25,8 @@ vec3 surf_eye = normalize(camera_pos - position.xyz);
 vec3 ball_vec = ball_pos - position.xyz;
 int spec = 32;
 float ambient = 0.1;
+vec3 normal = vert_normal;
+vec4 texModifier = vec4(1);
 
 
 float rand(vec2 co) { return fract(sin(dot(co.xy, vec2(12.9898,78.233))) * 43758.5453); }
@@ -29,6 +36,11 @@ vec3 reject (vec3 from, vec3 onto) { return from - onto*dot(from, onto)/dot(onto
 vec3 light = vec3(0,0,0);
 void main()
 {
+  if (normal_flag == 1)
+  {
+    texModifier = texture(textureSampler, textureCoordinates);
+    normal = TBN_matrix * (texture(normalSampler, textureCoordinates).xyz * 2 - 1);
+  }
 
   for (int i = 0; i < 3; i++)
   {
@@ -52,6 +64,10 @@ void main()
       light += length(reject(ball_vec,vec))/3 * lightArray[i].color * L * pow(max(dot(ref, surf_eye), 0), spec);
     }
   }
+  color = texModifier * vec4(vec3(dither(textureCoordinates) + ambient + 2*light), 1);
 
-  color = vec4(vec3(dither(textureCoordinates) + ambient + 2*light), 1);
+  // if (normal_flag == 1)
+  // {
+  //   color = vec4(normal, 1);
+  // }
 }
